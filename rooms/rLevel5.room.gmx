@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>984</w>
+    <w>1016</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>335</xoffset>
-    <yoffset>225</yoffset>
+    <xoffset>-49</xoffset>
+    <yoffset>-156</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="br_black" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -238,6 +238,7 @@
     <instance objName="oBug" x="272" y="688" name="inst_26E3C1B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="oBug" x="272" y="720" name="inst_ED138298" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="oWall2_Long" x="183" y="132" name="inst_F4804586" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="30"/>
+    <instance objName="oGrinder" x="208" y="176" name="inst_AA3EEE59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2_Long" x="608" y="640" name="inst_454799A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="oSwitchDestoyed" x="352" y="624" name="inst_6EAC8CB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSwitchDestoyed" x="480" y="624" name="inst_6DEE6A57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -259,7 +260,6 @@
     <instance objName="oLamp" x="600" y="520" name="inst_4CD8D68E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLamp" x="296" y="648" name="inst_8F1BBA8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLamp" x="632" y="648" name="inst_79A66466" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPistol" x="204" y="180" name="inst_FD15510A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="BackTest2" x="64" y="272" w="64" h="64" xo="0" yo="0" id="10000274" name="inst_81FC4791" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
