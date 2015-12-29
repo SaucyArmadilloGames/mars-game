@@ -2,15 +2,15 @@
 <sprite>
   <type>0</type>
   <xorig>18</xorig>
-  <yorigin>18</yorigin>
+  <yorigin>16</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>22</bbox_left>
-  <bbox_right>30</bbox_right>
-  <bbox_top>15</bbox_top>
-  <bbox_bottom>21</bbox_bottom>
+  <bbox_left>24</bbox_left>
+  <bbox_right>32</bbox_right>
+  <bbox_top>13</bbox_top>
+  <bbox_bottom>19</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -21,6 +21,5 @@
   <height>36</height>
   <frames>
     <frame index="0">images\sPistol_0.png</frame>
-    <frame index="1">images\sPistol_1.png</frame>
   </frames>
 </sprite>

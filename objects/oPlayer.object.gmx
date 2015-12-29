@@ -49,7 +49,7 @@ instance_create(x, y, oGun)
 if global.GunType &gt; 0.1 {
 global.PlayerHasGun = true }
 
-
+instance_create(x,y,oHand)
 
 
 ///Initialize Variables

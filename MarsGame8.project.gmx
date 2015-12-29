@@ -152,6 +152,7 @@
     <sprite>sprites\sSpore</sprite>
     <sprite>sprites\GitTest</sprite>
     <sprite>sprites\sPistol</sprite>
+    <sprite>sprites\sHand</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -224,6 +225,7 @@
     <font>fonts\Font1</font>
   </fonts>
   <objects name="objects">
+    <object>objects\oHand</object>
     <object>objects\oBot1</object>
     <object>objects\oPlayer</object>
     <object>objects\oGrub</object>
