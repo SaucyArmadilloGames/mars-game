@@ -11,17 +11,17 @@ if keyboard_check(vk_numpad2) {
 }
 
 if keyboard_check(vk_numpad3) {
-     instance_create(Locx, Locy, oEnemy2)
+     instance_create(Locx, Locy, oBugGib)
 }
 
 if keyboard_check(vk_numpad4) {
-     instance_create(Locx, Locy, oRoboDerp)
+     instance_create(Locx, Locy, oRockGib)
 }
 
-if keyboard_check(vk_numpad5) {
-     instance_create(Locx, Locy, oSpider)
+if keyboard_check_pressed(vk_numpad5) {
+     instance_create(Locx, Locy, oPistol)
 }
 
-if keyboard_check(vk_numpad6) {
-     instance_create(Locx, Locy, oTestDerp1)
+if keyboard_check_pressed(vk_numpad6) {
+     instance_create(Locx, Locy, oGrinder)
 }

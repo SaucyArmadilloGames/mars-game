@@ -62,7 +62,7 @@ vspeed = vspeed + 0.2
 
 
 if place_meeting(x+hspeed, y+vspeed, oSolid) {
-    move_bounce_solid(true)
+    move_bounce_all(true)
     speed = speed * .50
     //Bounced = true
 }

@@ -100,10 +100,12 @@ if lives = 0 {
     room_goto(InfoDump1);
     lives = 5
     }
-DevHacks = true
+
 
 if keyboard_check_pressed(vk_escape) {
 game_end() }
+
+DevHacks = true
 
 if keyboard_check_pressed(ord('H')) {
 DevHacks = true }
