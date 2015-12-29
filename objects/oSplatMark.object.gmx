@@ -28,10 +28,12 @@
             <string>Timerr = 0
 TimerrSec = 0
 depth = 1000
-image_xscale = random_range(1,1.25)
+image_xscale = random_range(.8,1.25)
 image_yscale = image_xscale
 Fade = false
 image_angle = random(360)
+x += random_range(-10,10)
+y += random_range(-10,10)
 </string>
           </argument>
         </arguments>
