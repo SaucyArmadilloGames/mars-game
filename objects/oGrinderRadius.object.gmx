@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>Timerr = 0
+//also sounds awful
+//audio_play_sound(aSawPlaceholder,1,false)
+//audio_play_sound(aSawPlaceholder,1,true)
+//sound would never stop
 </string>
           </argument>
         </arguments>
@@ -52,7 +56,11 @@
 x = oGrinder.x
 y = oGrinder.y
 image_angle = oGrinder.image_angle
-
+Timerr += 1
+if Timerr &gt; room_speed { 
+//sounds awful
+//audio_play_sound(aExplosion24,1,false)
+ }
 </string>
           </argument>
         </arguments>

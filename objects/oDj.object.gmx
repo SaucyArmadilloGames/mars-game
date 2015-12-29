@@ -59,10 +59,8 @@ global.RedOpenC = false
 global.BlueOpenC = false
 global.GreenOpenC = false
 global.OrangeOpenC = false
-        
-        
-        
-        
+audio_play_sound(aMusicAmbient1,1,true)
+global.Armed = false
         
         
 

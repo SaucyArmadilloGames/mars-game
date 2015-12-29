@@ -20,6 +20,9 @@
     <sound>sound\aFire</sound>
     <sound>sound\aSpiderSpawn</sound>
     <sound>sound\aChainsawPickup</sound>
+    <sound>sound\aMusicAmbient1</sound>
+    <sound>sound\aSawPlaceholder</sound>
+    <sound>sound\aExplosion24</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="DerpSprites">

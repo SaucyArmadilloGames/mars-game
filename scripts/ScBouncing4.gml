@@ -1,5 +1,5 @@
 
-vspeed = vspeed + 0.2
+//vspeed = vspeed + 0.2
 
 if instance_place(x, y, oSolid) {
     move_bounce_solid(true)

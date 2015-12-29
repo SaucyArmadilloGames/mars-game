@@ -54,8 +54,8 @@ if place_meeting(x,y,oPlayer) {PickedUp = true}
             <string>if PickedUp = false {
 image_angle = 0
 if place_meeting(x+hspeed,y+vspeed,oSolid) {speed = 0} else {vspeed = 2}
-if instance_place(x,y,oPlayer) and keyboard_check_pressed(ord('E')) and PickedUp = false{
-with (oGrinder) { PickedUp = false }
+if instance_place(x,y,oPlayer) and keyboard_check_pressed(ord('E')) and PickedUp = false and global.Armed = false{
+global.Armed = true
 PickedUp = true
 //audio_play_sound(aChainsawPickup,1,false)
 }}
@@ -73,16 +73,16 @@ image_angle = point_direction(x,y,mouse_x,mouse_y)
 if image_angle &gt; 90 and image_angle &lt; 270 {image_yscale = -1 } else {image_yscale = 1 }
 
 if mouse_check_button_pressed(mb_left) { 
-
 Bullet = instance_create(x,y,oBullet)
-Bullet.speed = 10
+Bullet.speed = 20
 Bullet.image_angle = image_angle
 Bullet.direction = image_angle
+image_angle += 5
 audio_play_sound(aPew2,1,false)
-}
+} else {  }
 
 
-if keyboard_check_pressed(ord('Q')) {PickedUp = false image_angle = 0 }
+if keyboard_check_pressed(ord('Q')) {PickedUp = false image_angle = 0 global.Armed = false }
 }
 </string>
           </argument>
