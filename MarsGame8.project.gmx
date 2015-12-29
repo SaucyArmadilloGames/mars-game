@@ -14,6 +14,8 @@
     <sound>sound\aExplode</sound>
     <sound>sound\aThud</sound>
     <sound>sound\aDeathSound</sound>
+    <sound>sound\aPew2</sound>
+    <sound>sound\aPew1</sound>
     <sound>sound\aBugDeath</sound>
     <sound>sound\aFire</sound>
     <sound>sound\aSpiderSpawn</sound>

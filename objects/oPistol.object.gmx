@@ -78,6 +78,7 @@ Bullet = instance_create(x,y,oBullet)
 Bullet.speed = 10
 Bullet.image_angle = image_angle
 Bullet.direction = image_angle
+audio_play_sound(aPew2,1,false)
 }
 
 

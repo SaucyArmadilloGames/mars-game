@@ -9,7 +9,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>22</bbox_left>
   <bbox_right>30</bbox_right>
-  <bbox_top>14</bbox_top>
+  <bbox_top>15</bbox_top>
   <bbox_bottom>21</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -21,5 +21,6 @@
   <height>36</height>
   <frames>
     <frame index="0">images\sPistol_0.png</frame>
+    <frame index="1">images\sPistol_1.png</frame>
   </frames>
 </sprite>
