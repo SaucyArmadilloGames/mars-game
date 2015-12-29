@@ -149,6 +149,7 @@
     <sprite>sprites\ART_CREDITS2</sprite>
     <sprite>sprites\sSpore</sprite>
     <sprite>sprites\GitTest</sprite>
+    <sprite>sprites\sPistol</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -264,6 +265,7 @@
       <object>objects\oGrinderRadius</object>
       <object>objects\oSpark</object>
       <object>objects\oGrinder</object>
+      <object>objects\oPistol</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\oOrganicChunk</object>
