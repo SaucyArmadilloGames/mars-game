@@ -60,8 +60,6 @@ jumpspeed = 7;
 movespeed = 4;
 
 switch1 = false
-
-view = port
 </string>
           </argument>
         </arguments>

@@ -147,6 +147,7 @@
     <sprite>sprites\ART_CREDITS</sprite>
     <sprite>sprites\ART_CREDITS2</sprite>
     <sprite>sprites\sSpore</sprite>
+    <sprite>sprites\GitTest</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
