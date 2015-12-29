@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>direction = random(360)
-speed = 7
-
+speed = 12
+Timer = 400
 </string>
           </argument>
         </arguments>
@@ -50,10 +50,10 @@ speed = 7
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = speed * .95
-if speed &lt; 1 {instance_destroy()}
+            <string>speed = speed * .75
+if (speed &lt; 0.5 || --Timer &lt; 1) {instance_destroy()}
 vspeed = vspeed + .1
-if instance_place(x,y,oSolid) {instance_destroy()}
+if instance_place(x,y,oWall) {instance_destroy()}
 image_angle = direction
 </string>
           </argument>

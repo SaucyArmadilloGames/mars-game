@@ -6,7 +6,7 @@
   <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>oWeapons</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>sGrinderRadius</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>PickedUp = false
+Grinding = false
 image_xscale = 1
 image_yscale = 1
 if place_meeting(x,y,oPlayer) {PickedUp = true}
@@ -74,10 +75,11 @@ y = oPlayer.y
 image_angle = point_direction(x,y,mouse_x,mouse_y)
 if image_angle &gt; 90 and image_angle &lt; 270 {image_yscale = -1 } else {image_yscale = 1 }
 
-if mouse_check_button_pressed(mb_left) { 
+Grinding = mouse_check_button(mb_left)
+//if mouse_check_button_pressed(mb_left) { 
 
-if instance_exists(oGrinderRadius) {} else { instance_create(x,y,oGrinderRadius) }
-Grinding = true }
+//if instance_exists(oGrinderRadius) {} else { instance_create(x,y,oGrinderRadius) }
+//Grinding = true }
 
 
 

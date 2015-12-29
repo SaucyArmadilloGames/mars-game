@@ -95,6 +95,7 @@ instance_destroy()
 
     //what hurts me
     if place_meeting(x,y,oProjectile) {Health -= 1}
+    if (place_meeting(x,y,oGrinder) &amp;&amp; oGrinder.Grinding) {Health -= 1}
     
     //how do i die
     if Health &lt; 0 { repeat (3) {instance_create(x,y,oBugGib)}

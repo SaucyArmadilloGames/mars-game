@@ -262,12 +262,13 @@
     <objects name="Blocks">
       <object>objects\oSolid</object>
       <object>objects\oCrate2</object>
-      <object>objects\oWall</object>
+      <object>objects\oWall1</object>
       <object>objects\oWall2_Long</object>
       <object>objects\oWall2</object>
       <object>objects\oBarrier</object>
       <object>objects\oWall3</object>
       <object>objects\oCrate1</object>
+      <object>objects\oWall</object>
     </objects>
     <objects name="Guns">
       <object>objects\oGun</object>
