@@ -51,14 +51,13 @@ if place_meeting(x,y,oPlayer) {PickedUp = true}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-
-if PickedUp = false {
+            <string>if PickedUp = false {
 if place_meeting(x+hspeed,y+vspeed,oSolid) {speed = 0} else {vspeed = 2}
-if instance_place(x,y,oPlayer) and keyboard_check_pressed(ord('E')) {
+if instance_place(x,y,oPlayer) and keyboard_check_pressed(ord('E')) and PickedUp = false{
 PickedUp = true
+audio_play_sound(aChainsawPickup,1,false)
 }}
+
 
 if PickedUp = true {
 

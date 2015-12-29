@@ -17,6 +17,7 @@
     <sound>sound\aBugDeath</sound>
     <sound>sound\aFire</sound>
     <sound>sound\aSpiderSpawn</sound>
+    <sound>sound\aChainsawPickup</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="DerpSprites">
