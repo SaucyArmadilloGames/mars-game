@@ -3,7 +3,7 @@
   <spriteName>sWall</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>100</depth>
   <persistent>0</persistent>
   <parentName>oSolid</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -36,7 +36,7 @@ if Rotation = 3 { image_angle = Angle + 180 }
 if Rotation = 4 { image_angle = Angle + 270 }
 
 
-Damage = 0
+Health = 30
 </string>
           </argument>
         </arguments>
@@ -64,7 +64,7 @@ Damage = 0
 vspeed = 0
 if instance_place(x,y+2,oSolid) {} else {vspeed = 2}
 
-if Damage &gt; room_speed * .5 {
+if Health &lt;= 0 {
 repeat (3) {instance_create(x,y,oRockGib) }
 instance_destroy()
 }
@@ -90,7 +90,8 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Damage += 1
+            <string>ScGrind()
+instance_create(x,y,oSpark)
 </string>
           </argument>
         </arguments>
