@@ -63,7 +63,7 @@ if (surface_exists(surf)) {
 
     // The following three lines set the 'dark' overlay
     draw_set_color(c_black);
-    draw_set_alpha(0.90);
+    draw_set_alpha(0.7);
     draw_rectangle(0, 0, room_width, room_height, 0);
 
     // Setting the blend mode to 'subtract' is what allows us to "cut holes" out of the overlay
@@ -73,11 +73,11 @@ if (surface_exists(surf)) {
     // Draw circles in the overlay with your different light sources
     // Note that I add randomization to the position and radius to mimic a flicker effect
     with (oLamp)
-        draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 30 + random_range(-1, 1), false);
+        draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 96 + random_range(-1, 1), false);
     with (oPlayer)
-        draw_circle(x + random_range(-.5, .5), y + random_range(-.5, .5), 50 + random_range(-.5, .5), false);
+        draw_circle(x + random_range(-.5, .5), y + random_range(-.5, .5), 60 + random_range(-.5, .5), false);
     with (oSwitch)
-        draw_circle(x, y, 12 + random_range(-2, 2), false);    
+        draw_rectangle(x + 12, y + 12, x - 12, y - 12, false);    
             
     //with (oParticleLantern)
         //if (image_xscale &gt; 0.25)
