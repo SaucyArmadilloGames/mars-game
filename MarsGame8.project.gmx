@@ -371,9 +371,10 @@
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
     <room>rooms\rLevel4</room>
-    <room>rooms\rLevel5</room>
     <room>rooms\rLevel6</room>
-    <room>rooms\room15</room>
+    <room>rooms\rLevel45</room>
+    <room>rooms\rLevel5</room>
+    <room>rooms\rLevel7</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>
     <room>rooms\rTEST</room>
