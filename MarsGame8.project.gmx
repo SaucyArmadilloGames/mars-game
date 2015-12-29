@@ -103,8 +103,11 @@
         <sprite>sprites\sGrateOrange</sprite>
         <sprite>sprites\sGrateOrange2</sprite>
         <sprite>sprites\sBlueSwitch</sprite>
+        <sprite>sprites\sBluePlate</sprite>
         <sprite>sprites\sRedSwitch</sprite>
+        <sprite>sprites\sRedPlate</sprite>
         <sprite>sprites\sGreenSwitch</sprite>
+        <sprite>sprites\sGreenPlate</sprite>
         <sprite>sprites\sSwitchOrange</sprite>
         <sprite>sprites\sSwitchDestroyed</sprite>
       </sprites>
@@ -229,9 +232,14 @@
   </fonts>
   <objects name="objects">
     <object>objects\oHand</object>
-    <object>objects\oBot1</object>
     <object>objects\oPlayer</object>
-    <object>objects\oGrub</object>
+    <objects name="Enemys">
+      <object>objects\oBugGib</object>
+      <object>objects\oBot1</object>
+      <object>objects\oBug</object>
+      <object>objects\oFly</object>
+      <object>objects\oGrub</object>
+    </objects>
     <objects name="Systems">
       <object>objects\oGrateRed</object>
       <object>objects\oGrateRed2</object>
@@ -243,6 +251,7 @@
       <object>objects\oGrateOrange2</object>
       <object>objects\oSwitch</object>
       <object>objects\oRedSwitch</object>
+      <object>objects\oRedPlate</object>
       <object>objects\oGreenSwitch</object>
       <object>objects\oBlueSwitch</object>
       <object>objects\oOrangeSwitch</object>
@@ -274,6 +283,7 @@
       <object>objects\oSpark</object>
       <object>objects\oGrinder</object>
       <object>objects\oPistol</object>
+      <object>objects\oWeapons</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\oOrganicChunk</object>
@@ -344,14 +354,11 @@
       <object>objects\oCredit1</object>
       <object>objects\object90</object>
     </objects>
-    <object>objects\oFly</object>
     <object>objects\oLamp</object>
     <object>objects\oDj</object>
-    <object>objects\oBug</object>
-    <object>objects\oBugGib</object>
-    <object>objects\oStart</object>
     <object>objects\oRockGib</object>
     <object>objects\oGrapple</object>
+    <object>objects\oStart</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

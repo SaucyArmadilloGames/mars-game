@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>depth = 10
 
+global.Armed = false
 global.PlayerPickedUpGun = false
 global.GunNeedsToDie = false
 Hits = 0
