@@ -31,8 +31,8 @@ BulletNum = 1
 BulletSpeed = 30
 BulletSpread = 2
 Automatic = true
-//FireRate only applys to Automatic Weapons
-FireRate = 5
+//FireRate only applys to Automatic Weapons Bigger = slower
+FireRate = 6
 ScWeaponCreate()
 </string>
           </argument>
