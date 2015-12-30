@@ -83,7 +83,13 @@ switch1 = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Pointy = point_direction(x,y,mouse_x, mouse_y) 
+            <string>ScForceStayInGame()
+
+ScAllDudes()
+
+ScPushOut()
+
+Pointy = point_direction(x,y,mouse_x, mouse_y) 
 
 
 if Pointy &gt; 90 and Pointy &lt; 270 {
@@ -97,9 +103,7 @@ image_xscale = 1 }
 //if Dire = 1 {image_xscale = 1} 
 //if Dire = 2 {image_xscale = -1} 
     
-ScForceStayInGame()
 
-ScAllDudes()
 
 
 //GiveMeAGun

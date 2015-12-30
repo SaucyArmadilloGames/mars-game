@@ -224,6 +224,7 @@
     <script>scripts\angle_approach.gml</script>
     <script>scripts\script27.gml</script>
     <script>scripts\ScGrind.gml</script>
+    <script>scripts\ScPushOut.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
@@ -250,12 +251,13 @@
       <object>objects\oGrateGreen2</object>
       <object>objects\oGrateOrange</object>
       <object>objects\oGrateOrange2</object>
-      <object>objects\oSwitch</object>
+      <object>objects\oGrate</object>
       <object>objects\oRedSwitch</object>
-      <object>objects\oRedPlate</object>
       <object>objects\oGreenSwitch</object>
       <object>objects\oBlueSwitch</object>
       <object>objects\oOrangeSwitch</object>
+      <object>objects\oSwitch</object>
+      <object>objects\oRedPlate</object>
       <object>objects\oDoor</object>
       <object>objects\oSwitchDestoyed</object>
     </objects>

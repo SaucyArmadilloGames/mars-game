@@ -112,7 +112,7 @@ if Randy &gt; 5
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oBarrier">
+    <event eventtype="4" ename="oWall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -137,7 +137,7 @@ image_angle = random(360)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oWall">
+    <event eventtype="4" ename="oBarrier">
       <action>
         <libid>1</libid>
         <id>603</id>

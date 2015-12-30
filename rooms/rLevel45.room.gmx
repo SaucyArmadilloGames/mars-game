@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1008</w>
+    <w>1016</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-39</xoffset>
-    <yoffset>6</yoffset>
+    <xoffset>305</xoffset>
+    <yoffset>302</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="br_black" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -323,6 +323,8 @@
     <instance objName="oWall1" x="1488" y="304" name="inst_ADEBE231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="1136" y="272" name="inst_9E4F166E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="1136" y="304" name="inst_CF4636A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall1" x="368" y="336" name="inst_E959E804" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall1" x="528" y="336" name="inst_A7322908" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="BackTest2" x="64" y="0" w="64" h="64" xo="0" yo="0" id="10000357" name="inst_1525AC8A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
