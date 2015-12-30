@@ -68,10 +68,13 @@ if Shoot = true {
     if Wait &gt; room_speed {   
         Bait = Bait + 1    
         if Bait &gt; 5 {
-        Lazer = instance_create(x,y,oLazer)
-        Lazer.direction = image_angle
-        Lazer.speed = 20 * 30 / room_speed
+        Random = random_range(-.5,.5)
+        Lazer = instance_create(x,y,oBullet)
+        Lazer.direction = image_angle + Random
+        image_angle = Lazer.direction
+        Lazer.speed = 20 * 30 / room_speed 
         Lazer.image_angle = image_angle
+        audio_play_sound(aPew2,1,false) 
         Bait = 0
         Lazers = Lazers + 1
         }
