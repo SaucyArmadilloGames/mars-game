@@ -221,12 +221,12 @@
     <script>scripts\ScDirection.gml</script>
     <script>scripts\ScOpen.gml</script>
     <script>scripts\ScOpen2.gml</script>
-    <script>scripts\ScGravity.gml</script>
     <script>scripts\arc_of_sight.gml</script>
     <script>scripts\angle_approach.gml</script>
     <script>scripts\script27.gml</script>
     <script>scripts\ScGrind.gml</script>
     <script>scripts\ScPushOut.gml</script>
+<<<<<<< HEAD
     <scripts name="Guns!">
       <script>scripts\ScPickup.gml</script>
       <script>scripts\ScReload.gml</script>
@@ -234,6 +234,9 @@
       <script>scripts\ScGunStuff.gml</script>
       <script>scripts\ScWeaponCreate.gml</script>
     </scripts>
+=======
+    <script>scripts\ScDoGravity.gml</script>
+>>>>>>> origin/master
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
