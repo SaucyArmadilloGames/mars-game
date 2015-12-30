@@ -160,6 +160,7 @@
     <sprite>sprites\GitTest</sprite>
     <sprite>sprites\sPistol</sprite>
     <sprite>sprites\sHand</sprite>
+    <sprite>sprites\sAssault</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -287,10 +288,11 @@
       <object>objects\oSpark</object>
       <object>objects\oGrinder</object>
       <object>objects\oPistol</object>
+      <object>objects\oAssualt2</object>
+      <object>objects\oAssault</object>
       <object>objects\oWeapons</object>
     </objects>
     <objects name="Projectiles">
-      <object>objects\oOrganicChunk</object>
       <object>objects\oGrenade</object>
       <object>objects\oKnife</object>
       <object>objects\oFlame</object>
@@ -312,46 +314,8 @@
         <object>objects\oBlood</object>
         <object>objects\oExplosion</object>
       </objects>
-      <objects name="Boxes">
-        <object>objects\oBox</object>
-        <object>objects\oBox2</object>
-        <object>objects\oGunBox</object>
-        <object>objects\oGunBox2</object>
-        <object>objects\oRoboBox</object>
-        <object>objects\oRoboBox2</object>
-        <objects name="Derps/enemys">
-          <object>objects\oEnemy1</object>
-          <object>objects\oFreind1</object>
-          <object>objects\oEnemy1Follow</object>
-          <object>objects\oSpider</object>
-          <object>objects\oRoboDerp</object>
-          <object>objects\oEnemy2</object>
-          <object>objects\oFreind1Dead</object>
-          <object>objects\oTestDerp1</object>
-        </objects>
-      </objects>
-      <objects name="things without sprites">
-        <objects name="Gui">
-          <object>objects\oWin</object>
-          <object>objects\oGUI</object>
-          <object>objects\Lvl1GUI</object>
-          <object>objects\oLvl3LoosingBar</object>
-          <object>objects\oLvl1LoosingBar</object>
-          <object>objects\oLvl3Tutorial</object>
-          <object>objects\oWizzard</object>
-          <object>objects\oScoreDisplay</object>
-          <object>objects\oSpiderDisplay</object>
-        </objects>
-        <objects name="RoomObjects">
-          <object>objects\oInfoDump</object>
-          <object>objects\oTutorial1</object>
-          <object>objects\oRoom</object>
-          <object>objects\oRoom4</object>
-          <object>objects\oRoom3</object>
-          <object>objects\oRoom35Spawner</object>
-          <object>objects\oLooseScreen</object>
-        </objects>
-      </objects>
+      <object>objects\oInfoDump</object>
+      <object>objects\oLooseScreen</object>
     </objects>
     <objects name="Lighting">
       <object>objects\oLightingController</object>
