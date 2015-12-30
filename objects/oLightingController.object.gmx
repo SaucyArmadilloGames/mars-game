@@ -76,7 +76,7 @@ if (surface_exists(surf)) {
         draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 96 + random_range(-1, 1), false);
     with (oPlayer)
         draw_circle(x + random_range(-.5, .5), y + random_range(-.5, .5), 60 + random_range(-.5, .5), false);
-    with (oSwitch)
+    with (pSwitch)
         draw_rectangle(x + 12, y + 12, x - 12, y - 12, false);    
             
     //with (oParticleLantern)

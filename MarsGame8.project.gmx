@@ -235,6 +235,12 @@
       <script>scripts\ScWeaponCreate.gml</script>
     </scripts>
     <script>scripts\ScDoGravity.gml</script>
+    <scripts name="Switches">
+      <script>scripts\ScAssertRed.gml</script>
+      <script>scripts\ScAssertGreen.gml</script>
+      <script>scripts\ScAssertBlue.gml</script>
+      <script>scripts\ScAssertOrange.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
@@ -254,23 +260,25 @@
       <object>objects\oGrub</object>
     </objects>
     <objects name="Systems">
-      <object>objects\oGrateRed</object>
-      <object>objects\oGrateRed2</object>
-      <object>objects\oGrateBlue</object>
-      <object>objects\oGrateBlue2</object>
-      <object>objects\oGrateGreen</object>
-      <object>objects\oGrateGreen2</object>
-      <object>objects\oGrateOrange</object>
-      <object>objects\oGrateOrange2</object>
-      <object>objects\oGrate</object>
+      <object>objects\pSwitch</object>
       <object>objects\oRedSwitch</object>
       <object>objects\oGreenSwitch</object>
       <object>objects\oBlueSwitch</object>
       <object>objects\oOrangeSwitch</object>
-      <object>objects\oSwitch</object>
       <object>objects\oRedPlate</object>
       <object>objects\oDoor</object>
       <object>objects\oSwitchDestoyed</object>
+      <objects name="Grates">
+        <object>objects\pGrate</object>
+        <object>objects\oGrateRed</object>
+        <object>objects\oGrateRed2</object>
+        <object>objects\oGrateBlue</object>
+        <object>objects\oGrateBlue2</object>
+        <object>objects\oGrateGreen</object>
+        <object>objects\oGrateGreen2</object>
+        <object>objects\oGrateOrange</object>
+        <object>objects\oGrateOrange2</object>
+      </objects>
     </objects>
     <objects name="Blocks">
       <object>objects\oSolid</object>
