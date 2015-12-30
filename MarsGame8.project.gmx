@@ -161,6 +161,7 @@
     <sprite>sprites\sPistol</sprite>
     <sprite>sprites\sHand</sprite>
     <sprite>sprites\sAssault</sprite>
+    <sprite>sprites\sShotGun</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -226,6 +227,13 @@
     <script>scripts\script27.gml</script>
     <script>scripts\ScGrind.gml</script>
     <script>scripts\ScPushOut.gml</script>
+    <scripts name="Guns!">
+      <script>scripts\ScPickup.gml</script>
+      <script>scripts\ScReload.gml</script>
+      <script>scripts\ScShoot.gml</script>
+      <script>scripts\ScGunStuff.gml</script>
+      <script>scripts\ScWeaponCreate.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
@@ -288,8 +296,8 @@
       <object>objects\oSpark</object>
       <object>objects\oGrinder</object>
       <object>objects\oPistol</object>
-      <object>objects\oAssualt2</object>
-      <object>objects\oAssault</object>
+      <object>objects\oShotGun</object>
+      <object>objects\oAssualt</object>
       <object>objects\oWeapons</object>
     </objects>
     <objects name="Projectiles">
