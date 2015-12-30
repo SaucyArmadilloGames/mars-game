@@ -99,7 +99,7 @@ instance_destroy()
     
     //how do i die
     if Health &lt; 0 { repeat (3) {instance_create(x,y,oBugGib)}
-    //play a sound
+    ScPlaySplat()
     if floor(random(3)) = 0 {instance_create( x,y,oFly )}
     repeat (2) {instance_create( x+random_range(-10,10),y+random_range(-10,10),oSplatMark )}
     instance_destroy()

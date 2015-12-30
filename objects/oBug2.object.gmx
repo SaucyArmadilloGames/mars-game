@@ -60,7 +60,7 @@ direction = random(360)
     
     //how do i die
     if Health &lt; 0 { repeat (2) {instance_create(x,y,oBugGib)}
-    //play a sound
+    ScPlaySplat()
     if floor(random(3)) = 0 {instance_create( x,y,oFly )}
     instance_create( x,y,oSplatMark )
     instance_destroy()

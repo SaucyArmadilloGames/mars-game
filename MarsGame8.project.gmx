@@ -23,6 +23,10 @@
     <sound>sound\aMusicAmbient1</sound>
     <sound>sound\aSawPlaceholder</sound>
     <sound>sound\aExplosion24</sound>
+    <sound>sound\aSplat2</sound>
+    <sound>sound\aSplat1</sound>
+    <sound>sound\aSplat0</sound>
+    <sound>sound\aPistolPickup</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="DerpSprites">
@@ -235,6 +239,7 @@
       <script>scripts\ScWeaponCreate.gml</script>
     </scripts>
     <script>scripts\ScDoGravity.gml</script>
+    <script>scripts\ScPlaySplat.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
