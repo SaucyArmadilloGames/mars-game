@@ -59,10 +59,7 @@ Health = 30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-vspeed = 0
-if instance_place(x,y+2,oSolid) {} else {vspeed = 2}
+            <string>ScDoGravity()
 
 if Health &lt;= 0 {
 repeat (3) {instance_create(x,y,oRockGib) }
