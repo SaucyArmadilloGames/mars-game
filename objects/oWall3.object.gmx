@@ -34,7 +34,7 @@ if Rotation = 4 { image_angle = 270 }
 
 Damage = 0
 
-
+instance_change(oWall2,true)
 </string>
           </argument>
         </arguments>

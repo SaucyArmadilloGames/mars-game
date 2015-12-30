@@ -78,40 +78,6 @@ ScBouncing2()
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oRoboDerp">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-Randy = random(10)
-
-if Randy &gt; 5
-    move_bounce_solid(false)
-    Bounced = true
-    image_angle = random(360)
-    with (instance_nearest(x, y, oRoboDerp))
-        {
-        Heat = Heat + 1
-        }
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="oWall">
       <action>
         <libid>1</libid>

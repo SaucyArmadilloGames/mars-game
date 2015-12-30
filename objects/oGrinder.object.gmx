@@ -29,7 +29,7 @@
 Grinding = false
 image_xscale = 1
 image_yscale = 1
-if place_meeting(x,y,oPlayer) {PickedUp = true}
+if place_meeting(x,y,oPlayer) {PickedUp = true global.Armed = true}
 </string>
           </argument>
         </arguments>
