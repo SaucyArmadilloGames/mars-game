@@ -145,9 +145,9 @@
     <sprite>sprites\sBot1</sprite>
     <sprite>sprites\sprite86</sprite>
     <sprite>sprites\sBug1</sprite>
+    <sprite>sprites\sBug2</sprite>
     <sprite>sprites\sStand</sprite>
     <sprite>sprites\sShooter</sprite>
-    <sprite>sprites\sprite100</sprite>
     <sprite>sprites\sGrinder</sprite>
     <sprite>sprites\sGrinderRadius</sprite>
     <sprite>sprites\sSpark</sprite>
@@ -375,7 +375,6 @@
     <room>rooms\rLevel6</room>
     <room>rooms\rLevel45</room>
     <room>rooms\rLevel5</room>
-    <room>rooms\rLevel7</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>
     <room>rooms\rTEST</room>
