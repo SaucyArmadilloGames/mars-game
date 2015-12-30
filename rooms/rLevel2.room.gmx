@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
+    <w>1008</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>2254</xoffset>
-    <yoffset>2184</yoffset>
+    <xoffset>243</xoffset>
+    <yoffset>227</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bMars" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -411,6 +411,15 @@
     <instance objName="oStand2" x="1296" y="336" name="inst_40B615A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="oStand2" x="1193" y="432" name="inst_D9BF59FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="691" y="633" name="inst_1D2192B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="30"/>
+    <instance objName="oBug2" x="1088" y="432" name="inst_EBE1BFB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug2" x="1200" y="560" name="inst_85DD7B01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="1216" y="576" name="inst_D7EE09D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="1056" y="480" name="inst_AB18550B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="816" y="432" name="inst_DD12A4A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="704" y="416" name="inst_9619F291" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="1536" y="560" name="inst_C62ED49D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="656" y="272" name="inst_DD92E279" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="544" y="672" name="inst_59B0B58F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="BackTest2" x="0" y="672" w="64" h="64" xo="0" yo="0" id="10000119" name="inst_9279C570" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

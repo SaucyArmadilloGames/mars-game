@@ -33,6 +33,7 @@ jumpspeed = 7;
 movespeed = 4;
 depth = 10;
 image_speed = .25;
+global.Armed = false
 
 // Create player's hand
 instance_create(x,y,oHand);
