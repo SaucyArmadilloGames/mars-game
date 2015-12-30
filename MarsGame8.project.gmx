@@ -146,6 +146,7 @@
     <sprite>sprites\sprite86</sprite>
     <sprite>sprites\sBug1</sprite>
     <sprite>sprites\sBug2</sprite>
+    <sprite>sprites\sBug3</sprite>
     <sprite>sprites\sStand</sprite>
     <sprite>sprites\sShooter</sprite>
     <sprite>sprites\sGrinder</sprite>
@@ -248,6 +249,7 @@
       <object>objects\oBugGib</object>
       <object>objects\oBot1</object>
       <object>objects\oBug</object>
+      <object>objects\oBug2</object>
       <object>objects\oFly</object>
       <object>objects\oGrub</object>
     </objects>
@@ -342,6 +344,7 @@
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
     <room>rooms\DemoRoom</room>
+    <room>rooms\rLevel7</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
