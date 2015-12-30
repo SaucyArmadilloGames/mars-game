@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1008</w>
+    <w>1000</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>554</xoffset>
-    <yoffset>-309</yoffset>
+    <xoffset>254</xoffset>
+    <yoffset>256</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="br_black" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -333,6 +333,51 @@
     <instance objName="oWall2" x="528" y="80" name="inst_5E4B5FDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="528" y="48" name="inst_82A3DE3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="528" y="16" name="inst_6F3BD272" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="160" y="144" name="inst_5B5CA8B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="176" y="272" name="inst_274E5208" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="384" y="224" name="inst_841813DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="592" y="256" name="inst_B5D76F7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="864" y="192" name="inst_4C55C25B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="1120" y="224" name="inst_94396BF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="1120" y="384" name="inst_34C0C219" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="1040" y="512" name="inst_FF00D844" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="1120" y="560" name="inst_9FC7F194" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="1264" y="512" name="inst_46889587" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="1424" y="400" name="inst_3D4237F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="1408" y="496" name="inst_68CC7655" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="768" y="400" name="inst_6FA9D629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="624" y="384" name="inst_9EB4028D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="816" y="576" name="inst_26A6A0C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="816" y="640" name="inst_C89E9AB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="672" y="640" name="inst_A8B82FC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="384" y="640" name="inst_10194FA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="480" y="704" name="inst_D4FF391E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="640" y="160" name="inst_A7C6EA40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSplatMark" x="672" y="160" name="inst_D8D78623" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug2" x="272" y="192" name="inst_8C85BD68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug2" x="512" y="224" name="inst_7B08C6DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug2" x="784" y="208" name="inst_96F570D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug2" x="672" y="464" name="inst_455D2064" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug2" x="1120" y="464" name="inst_A3D33362" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug2" x="1360" y="448" name="inst_6CAC58B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="224" y="240" name="inst_CBC21C34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="432" y="160" name="inst_5573B861" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="960" y="208" name="inst_DFE18918" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="720" y="160" name="inst_35D050A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="736" y="208" name="inst_FEEC7F5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="704" y="432" name="inst_FC73735A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="688" y="496" name="inst_58714E29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="1056" y="448" name="inst_EDF03056" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="1248" y="464" name="inst_EB4310A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="1296" y="448" name="inst_E404B5DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="752" y="608" name="inst_858B9975" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="432" y="656" name="inst_3FAEEA18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="432" y="416" name="inst_26685F1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="464" y="384" name="inst_FA5C0A96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="400" y="384" name="inst_9BD0F882" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="464" y="400" name="inst_6EDB6B40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="416" y="368" name="inst_0E10E148" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFly" x="480" y="384" name="inst_68B7F8A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="BackTest2" x="64" y="0" w="64" h="64" xo="0" yo="0" id="10000357" name="inst_1525AC8A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
