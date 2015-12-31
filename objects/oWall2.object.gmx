@@ -3,7 +3,7 @@
   <spriteName>sWall</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>100</depth>
+  <depth>150</depth>
   <persistent>0</persistent>
   <parentName>oSolid</parentName>
   <maskName>&lt;undefined&gt;</maskName>

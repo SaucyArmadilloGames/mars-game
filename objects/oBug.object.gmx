@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Health = 1
+            <string>Health = 1;
+depthModifier = irandom(1);
+if (depthModifier == 0) {
+    depth = 50;
+    image_blend = make_colour_hsv(c_black, 50, 200)
+}
+else depth = -50;
 </string>
           </argument>
         </arguments>

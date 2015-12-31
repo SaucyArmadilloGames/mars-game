@@ -3,7 +3,7 @@
   <spriteName>sGreenSwitch</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>250</depth>
   <persistent>0</persistent>
   <parentName>pSwitch</parentName>
   <maskName>&lt;undefined&gt;</maskName>

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>pSwitch</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -93,17 +93,7 @@ image_index = 1
 if instance_place(x,y,oPlayer) or instance_place(x,y,oWeapons) { 
 Pressure = true } else Pressure = false
 
-if Pressure_old != Pressure {
-global.RedOpen = !global.RedOpen;
-    with (oGrateRed) { Open = !Open }
-    with (oGrateRed2) { Open = !Open }
-}
-
-
-
-
-
-
+if (Pressure_old != Pressure) ScAssertRed();
 </string>
           </argument>
         </arguments>
