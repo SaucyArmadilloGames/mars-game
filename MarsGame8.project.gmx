@@ -357,10 +357,10 @@
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\rLevel2</room>
     <room>rooms\InfoDump1</room>
     <room>rooms\DemoRoom</room>
     <room>rooms\rLevel1</room>
-    <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
     <room>rooms\rLevel4</room>
     <room>rooms\rLevel6</room>
@@ -373,6 +373,7 @@
     <room>rooms\rTemplate</room>
     <room>rooms\rTemplate2</room>
     <room>rooms\InfoDump2</room>
+    <room>rooms\Slopemania</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

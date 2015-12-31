@@ -1,7 +1,5 @@
 grav = 0.2
 
-if (vsp < 20) vsp += grav;
-
 //Horizontal Collision
 if (place_meeting(x+hsp,y,oSolid))
 {
@@ -23,12 +21,34 @@ if (place_meeting(x+hsp,y,oSolid))
 x += hsp;
 
 //Vertical Collision
+if (vsp == 0) // "Stick" player to ground on shallow downward slopes
+{
+    yplus = 0;
+    while (!place_meeting(x,y+yplus+1,oSolid) && yplus <= abs(1*hsp)) yplus +=1;
+    if place_meeting(x,y+yplus+1,oSolid)
+    {
+        y += yplus;
+    }
+}
+
+if (vsp < 20) vsp += grav;
+
 if (place_meeting(x,y+vsp,oSolid))
 {
-    while(!place_meeting(x,y+sign(vsp),oSolid))
+    /*xplus = 0;
+    while (place_meeting(y+vsp,x-xplus,oSolid) && xplus <= abs(1*vsp)) xplus +=1;
+    if place_meeting(y+vsp,x-xplus,oSolid)
+    {*/
+        while(!place_meeting(x,y+sign(vsp),oSolid))
+        {
+            y += sign(vsp);
+        }
+        vsp = 0;
+    /*}
+    else
     {
-        y += sign(vsp);
-    }
-    vsp = 0;
+        x -= xplus;
+    }*/
 }
+
 y += vsp;
