@@ -359,6 +359,7 @@
   <rooms name="rooms">
     <room>rooms\rLevel2</room>
     <room>rooms\InfoDump1</room>
+    <room>rooms\room17</room>
     <room>rooms\DemoRoom</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel3</room>
