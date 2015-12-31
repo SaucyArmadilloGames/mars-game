@@ -90,7 +90,7 @@ image_index = 1
 }
 
 
-if instance_place(x,y,oPlayer) or instance_place(x,y,oWeapons) { 
+if instance_place(x,y,oPlayer) or instance_place(x,y,oWeapons) or instance_place(x,y,oWall2) or instance_place(x,y,oBugMass) { 
 Pressure = true } else Pressure = false
 
 if (Pressure_old != Pressure) ScAssertRed();

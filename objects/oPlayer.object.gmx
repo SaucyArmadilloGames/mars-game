@@ -94,6 +94,7 @@ if (button &amp;&amp; keyboard_check_pressed(ord('E')))
         case 'green': ScAssertGreen(); break;
         case 'blue': ScAssertBlue(); break;
         case 'orange': ScAssertOrange(); break;
+        case 'purple': ScAssertPurple(); break;
     }
 }
 </string>

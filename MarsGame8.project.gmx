@@ -108,6 +108,10 @@
         <sprite>sprites\sGrate32</sprite>
         <sprite>sprites\sGrateOrange</sprite>
         <sprite>sprites\sGrateOrange2</sprite>
+        <sprite>sprites\sGratePurple</sprite>
+        <sprite>sprites\sGratePurple2</sprite>
+        <sprite>sprites\sPurpleSwitch</sprite>
+        <sprite>sprites\sPurplePlate</sprite>
         <sprite>sprites\sBlueSwitch</sprite>
         <sprite>sprites\sBluePlate</sprite>
         <sprite>sprites\sRedSwitch</sprite>
@@ -115,6 +119,7 @@
         <sprite>sprites\sGreenSwitch</sprite>
         <sprite>sprites\sGreenPlate</sprite>
         <sprite>sprites\sSwitchOrange</sprite>
+        <sprite>sprites\sOrangePlate</sprite>
         <sprite>sprites\sSwitchDestroyed</sprite>
       </sprites>
       <sprites name="Weapons">
@@ -169,6 +174,8 @@
     <sprite>sprites\sHand</sprite>
     <sprite>sprites\sAssault</sprite>
     <sprite>sprites\sShotGun</sprite>
+    <sprite>sprites\sBugMass</sprite>
+    <sprite>sprites\sBombSpitter</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -246,6 +253,7 @@
       <script>scripts\ScAssertGreen.gml</script>
       <script>scripts\ScAssertBlue.gml</script>
       <script>scripts\ScAssertOrange.gml</script>
+      <script>scripts\ScAssertPurple.gml</script>
     </scripts>
     <script>scripts\ScPlaySplat.gml</script>
   </scripts>
@@ -258,6 +266,7 @@
   <objects name="objects">
     <object>objects\oHand</object>
     <object>objects\oPlayer</object>
+    <object>objects\oDoor</object>
     <objects name="Enemys">
       <object>objects\oBugGib</object>
       <object>objects\oBot1</object>
@@ -268,16 +277,21 @@
       <object>objects\oGrub</object>
     </objects>
     <objects name="Systems">
+      <object>objects\oSwitchDestoyed</object>
       <object>objects\pSwitch</object>
       <object>objects\oRedSwitch</object>
-      <object>objects\oGreenSwitch</object>
-      <object>objects\oBlueSwitch</object>
-      <object>objects\oOrangeSwitch</object>
       <object>objects\oRedPlate</object>
-      <object>objects\oDoor</object>
-      <object>objects\oSwitchDestoyed</object>
+      <object>objects\oGreenSwitch</object>
+      <object>objects\oPlateGreen</object>
+      <object>objects\oBlueSwitch</object>
+      <object>objects\oPlateBlue</object>
+      <object>objects\oOrangeSwitch</object>
+      <object>objects\oPlateOrange</object>
+      <object>objects\oPurpleSwitch</object>
+      <object>objects\oPlatePurple</object>
       <objects name="Grates">
         <object>objects\pGrate</object>
+        <object>objects\oBombSpitter</object>
         <object>objects\oGrateRed</object>
         <object>objects\oGrateRed2</object>
         <object>objects\oGrateBlue</object>
@@ -286,6 +300,8 @@
         <object>objects\oGrateGreen2</object>
         <object>objects\oGrateOrange</object>
         <object>objects\oGrateOrange2</object>
+        <object>objects\oGratePurple</object>
+        <object>objects\oGratePurple2</object>
       </objects>
     </objects>
     <objects name="Blocks">
@@ -294,6 +310,7 @@
       <object>objects\oWall1</object>
       <object>objects\oWall2_Long</object>
       <object>objects\oWall2</object>
+      <object>objects\oBugMass</object>
       <object>objects\oBarrier</object>
       <object>objects\oWall3</object>
       <object>objects\oCrate1</object>
@@ -357,9 +374,10 @@
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\rLevel2</room>
     <room>rooms\InfoDump1</room>
+    <room>rooms\rTEST</room>
     <room>rooms\room17</room>
+    <room>rooms\rLevel2</room>
     <room>rooms\DemoRoom</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel3</room>
@@ -370,7 +388,6 @@
     <room>rooms\rLevel7</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>
-    <room>rooms\rTEST</room>
     <room>rooms\rTemplate</room>
     <room>rooms\rTemplate2</room>
     <room>rooms\InfoDump2</room>
