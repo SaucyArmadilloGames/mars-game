@@ -25,15 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Clipsize = 10
-ReloadTime = room_speed * 2
-BulletNum = 1
-BulletSpeed = 20
-BulletSpread = 3
-Automatic = false
+            <string>hsp = 0;
+vsp = 0;
+Clipsize = 10;
+ReloadTime = room_speed * 2;
+BulletNum = 1;
+BulletSpeed = 20;
+BulletSpread = 3;
+Automatic = false;
 //FireRate only applys to Automatic Weapons
-FireRate = 1
-ScWeaponCreate()
+FireRate = 1;
+pickUpSound = false;
+
+ScWeaponCreate();
 </string>
           </argument>
         </arguments>
@@ -56,12 +60,9 @@ ScWeaponCreate()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ScPickup()
+            <string>ScPickup();
 
-if PickedUp = true {
-ScShoot()
-ScGunStuff()
-}
+if (PickedUp) { ScShoot(); }
 </string>
           </argument>
         </arguments>

@@ -245,7 +245,6 @@
       <script>scripts\ScPickup.gml</script>
       <script>scripts\ScReload.gml</script>
       <script>scripts\ScShoot.gml</script>
-      <script>scripts\ScGunStuff.gml</script>
       <script>scripts\ScWeaponCreate.gml</script>
     </scripts>
     <scripts name="Switches">
@@ -380,6 +379,7 @@
     <room>rooms\rLevel2</room>
     <room>rooms\DemoRoom</room>
     <room>rooms\rLevel1</room>
+    <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
     <room>rooms\rLevel4</room>
     <room>rooms\rLevel6</room>

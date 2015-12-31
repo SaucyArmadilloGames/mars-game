@@ -32,6 +32,8 @@ Heat = 0
 HeatSec = 0
 OverheatTemp = 6
 
+vsp = 0;
+hsp = 0;
 </string>
           </argument>
         </arguments>

@@ -1,8 +1,26 @@
-if PickedUp = false {
-image_angle = 0
-if place_meeting(x+hspeed,y+vspeed,oSolid) {speed = 0} else {vspeed = 2}
-if instance_place(x,y,oPlayer) and keyboard_check_pressed(ord('E')) and PickedUp = false and global.Armed = false{
-global.Armed = true
-PickedUp = true
-//audio_play_sound(aChainsawPickup,1,false)
-}}
+if (PickedUp)
+{
+    x = oPlayer.x;
+    y = oPlayer.y;
+    image_angle = point_direction(x,y,mouse_x,mouse_y);
+    
+    if (image_angle > 90 && image_angle < 270) { image_yscale = -1; }
+    else { image_yscale = 1; }
+    
+    if (keyboard_check_pressed(ord('Q')))
+    {
+        PickedUp = false;
+        global.Armed = false
+    }
+}
+else
+{
+    image_angle = 0;
+    ScGravityAndCollision();
+    if (instance_place(x,y,oPlayer) && keyboard_check_pressed(ord('E')))
+    {
+        global.Armed = true;
+        PickedUp = true;
+        if (pickUpSound) { audio_play_sound(pickUpSound,1,false); }
+    }
+}
