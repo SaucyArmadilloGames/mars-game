@@ -94,8 +94,9 @@
       </sprites>
       <sprites name="Player">
         <sprite>sprites\sPlayerIdle</sprite>
-        <sprite>sprites\sPlayerAirborn</sprite>
         <sprite>sprites\sPlayerWalking</sprite>
+        <sprite>sprites\sPlayerAirborn</sprite>
+        <sprite>sprites\sPlayerWalking_old</sprite>
         <sprite>sprites\sprite98</sprite>
         <sprite>sprites\sprite99</sprite>
       </sprites>
@@ -204,6 +205,7 @@
     <background>background\background18</background>
     <background>background\br_black</background>
     <background>background\br_BackroundxD</background>
+    <background>background\BackRoundMenu1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
