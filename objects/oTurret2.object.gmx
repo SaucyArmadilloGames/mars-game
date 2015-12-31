@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = ID.depth - 1
+            <string>depth = ID.depth + 1
 y = ID.y //- 40
 global.Target = false
 Shoot = false
@@ -63,6 +63,10 @@ if instance_exists(oPlayer) {
 }else {
 //image_angle = image_angle + 1
 }
+
+x = ID.x
+y = ID.y
+
 
 if Shoot = true {
     Wait = Wait + 1

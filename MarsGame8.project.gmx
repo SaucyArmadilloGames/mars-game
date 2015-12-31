@@ -152,6 +152,7 @@
     <sprite>sprites\sBug1</sprite>
     <sprite>sprites\sBug2</sprite>
     <sprite>sprites\sBug3</sprite>
+    <sprite>sprites\sBug4</sprite>
     <sprite>sprites\sStand</sprite>
     <sprite>sprites\sShooter</sprite>
     <sprite>sprites\sGrinder</sprite>
@@ -263,6 +264,7 @@
       <object>objects\oBot1</object>
       <object>objects\oBug</object>
       <object>objects\oBug2</object>
+      <object>objects\oBug3</object>
       <object>objects\oFly</object>
       <object>objects\oGrub</object>
     </objects>
