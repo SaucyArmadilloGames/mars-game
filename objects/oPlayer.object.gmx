@@ -26,11 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>//Initialize vars
-grav = 0.2;
-hsp = 0;
-vsp = 0;
 jumpspeed = 7;
 movespeed = 4;
+hsp = 0;
+vsp = 0;
 depth = 10;
 image_speed = .25;
 global.Armed = false
@@ -82,30 +81,8 @@ key_jump = keyboard_check_pressed(ord('W'));
 
 move = key_left + key_right;
 hsp = move * movespeed;
-if (vsp &lt; 10) vsp += grav;
 if (place_meeting(x,y+1,oSolid)) vsp = key_jump * -jumpspeed;
-
-//Horizontal Collision
-if (place_meeting(x+hsp,y,oSolid))
-{
-    while(!place_meeting(x+sign(hsp),y,oSolid))
-    {
-        x += sign(hsp);
-    }
-    hsp = 0;
-}
-x += hsp;
-
-//Vertical Collision
-if (place_meeting(x,y+vsp,oSolid))
-{
-    while(!place_meeting(x,y+sign(vsp),oSolid))
-    {
-        y += sign(vsp);
-    }
-    vsp = 0;
-}
-y += vsp;
+ScGravityAndCollision();
 
 ///Button Presser
 button = instance_place(x, y, pSwitch);
@@ -119,32 +96,6 @@ if (button &amp;&amp; keyboard_check_pressed(ord('E')))
         case 'orange': ScAssertOrange(); break;
     }
 }
-/*
-//red
-if place_meeting(x,y,oRedSwitch) and keyboard_check_pressed(ord('E')) {
-    global.RedOpen = !global.RedOpen;
-    with (oGrateRed) { Open = !Open }
-    with (oGrateRed2) { Open = !Open }
-    }
-//green
-if place_meeting(x,y,oGreenSwitch) and keyboard_check_pressed(ord('E')) {
-    global.GreenOpen = !global.GreenOpen;
-    with (oGrateGreen) { Open = !Open }
-    with (oGrateGreen2) { Open = !Open }
-    }
-//blue
-if place_meeting(x,y,oBlueSwitch) and keyboard_check_pressed(ord('E')) {
-    global.BlueOpen = !global.BlueOpen;
-    with (oGrateBlue) { Open = !Open }
-    with (oGrateBlue2) { Open = !Open }
-    }
-//blue
-if place_meeting(x,y,oOrangeSwitch) and keyboard_check_pressed(ord('E')) {
-    global.OrangeOpen = !global.OrangeOpen;
-    with (oGrateOrange) { Open = !Open }
-    with (oGrateOrange2) { Open = !Open }
-    }
-*/
 </string>
           </argument>
         </arguments>

@@ -241,7 +241,6 @@
       <script>scripts\ScGunStuff.gml</script>
       <script>scripts\ScWeaponCreate.gml</script>
     </scripts>
-    <script>scripts\ScDoGravity.gml</script>
     <scripts name="Switches">
       <script>scripts\ScAssertRed.gml</script>
       <script>scripts\ScAssertGreen.gml</script>
@@ -311,7 +310,6 @@
       <object>objects\oBombPile</object>
       <object>objects\oMouse</object>
       <object>objects\oExplosionRadius</object>
-      <object>objects\oGrinderRadius</object>
       <object>objects\oSpark</object>
       <object>objects\oGrinder</object>
       <object>objects\oPistol</object>

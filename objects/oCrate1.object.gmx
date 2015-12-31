@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>hsp = 0;
+vsp = 0;
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,12 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-vspeed = 0
-if instance_place(x,y+2,oSolid) {} else {vspeed = 2}
-
-
+            <string>ScGravityAndCollision();
 </string>
           </argument>
         </arguments>

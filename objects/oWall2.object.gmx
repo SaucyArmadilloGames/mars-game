@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0
+            <string>hsp = 0;
+vsp = 0;
+image_speed = 0
 Angle = image_angle
+
 
 
 image_index = floor(random(image_number))
@@ -59,11 +62,11 @@ Health = 30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ScDoGravity()
+            <string>ScGravityAndCollision();
 
-if Health &lt;= 0 {
-repeat (3) {instance_create(x,y,oRockGib) }
-instance_destroy()
+if (Health &lt;= 0) {
+    repeat (3) { instance_create(x,y,oRockGib); }
+    instance_destroy();
 }
 </string>
           </argument>
