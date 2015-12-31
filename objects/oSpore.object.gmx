@@ -70,7 +70,7 @@ Die = true
 if Die = true {
 
 instance_create(x,y,oSplatMark)
-//play splat sound
+audio_play_sound(aSplat3,1,false)
 instance_destroy()
 }
 </string>
