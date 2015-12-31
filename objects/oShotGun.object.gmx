@@ -28,10 +28,10 @@
             <string>hsp = 0;
 vsp = 0;
 Clipsize = 2;
-ReloadTime = room_speed * 2;
-BulletNum = 5;
-BulletSpeed = 25;
-BulletSpread = 5;
+ReloadTime = room_speed * 1;
+BulletNum = 6;
+BulletSpeed = 23;
+BulletSpread = 5.5;
 Automatic = false;
 pickUpSound = false;
 //FireRate only applys to Automatic Weapons

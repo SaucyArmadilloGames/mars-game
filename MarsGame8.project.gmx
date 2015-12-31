@@ -375,9 +375,6 @@
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
     <room>rooms\rTEST</room>
-    <room>rooms\room17</room>
-    <room>rooms\rLevel2</room>
-    <room>rooms\DemoRoom</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
@@ -386,12 +383,14 @@
     <room>rooms\rLevel45</room>
     <room>rooms\rLevel5</room>
     <room>rooms\rLevel7</room>
+    <room>rooms\room17</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>
     <room>rooms\rTemplate</room>
     <room>rooms\rTemplate2</room>
     <room>rooms\InfoDump2</room>
     <room>rooms\Slopemania</room>
+    <room>rooms\DemoRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
