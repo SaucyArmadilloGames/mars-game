@@ -17,7 +17,7 @@
   <makerSettings>
     <isSet>-1</isSet>
     <w>1872</w>
-    <h>1092</h>
+    <h>1096</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>2134</xoffset>
-    <yoffset>1470</yoffset>
+    <xoffset>-217</xoffset>
+    <yoffset>186</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -71,8 +71,8 @@
     <instance objName="oWall1" x="288" y="288" name="inst_F42E487A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="288" y="352" name="inst_08EA4EB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="352" y="352" name="inst_1AA35EAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlueSwitch" x="512" y="440" name="inst_3C0BB7C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oRedSwitch" x="320" y="440" name="inst_25CA2E78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlueSwitch" x="512" y="432" name="inst_3C0BB7C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oRedSwitch" x="320" y="432" name="inst_25CA2E78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGrateBlue" x="544" y="320" name="inst_88770A66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="oGrateBlue" x="512" y="288" name="inst_052CED63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="oGrateBlue" x="480" y="320" name="inst_57C51B4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
@@ -81,8 +81,8 @@
     <instance objName="oGrateRed" x="320" y="288" name="inst_7C77073C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="oGrateRed" x="288" y="320" name="inst_A6E84A99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="oGrateRed" x="352" y="320" name="inst_665020C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
-    <instance objName="oPlayer" x="416" y="424" name="inst_66FE62EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall1" x="642" y="480" name="inst_66426B34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="416" y="416" name="inst_66FE62EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall1" x="640" y="480" name="inst_66426B34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="672" y="480" name="inst_8BAF6F3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="704" y="480" name="inst_9FC64342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="736" y="480" name="inst_6859FE3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -96,7 +96,7 @@
     <instance objName="oGrateGreen" x="416" y="192" name="inst_4BD9A265" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="oGrateGreen" x="384" y="224" name="inst_F4A9F462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="oGrateGreen" x="448" y="224" name="inst_585AD3D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="oGreenSwitch" x="416" y="440" name="inst_2E416C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oGreenSwitch" x="416" y="432" name="inst_2E416C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2_Long" x="128" y="480" name="inst_5DC7A2B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2_Long" x="32" y="480" name="inst_95F18DA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="32" y="448" name="inst_F7F46929" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -112,7 +112,7 @@
     <instance objName="oWall3" x="256" y="352" name="inst_59373D93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall3" x="224" y="352" name="inst_610485C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLamp" x="272" y="448" name="inst_32E40A70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oLamp" x="624" y="424" name="inst_1407468F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLamp" x="624" y="416" name="inst_1407468F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLamp" x="336" y="208" name="inst_DFB485BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2_Long" x="1088" y="480" name="inst_499F749B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2_Long" x="1184" y="480" name="inst_D0BF8072" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
@@ -313,6 +313,7 @@
     <instance objName="oWall2" x="944" y="576" name="inst_1CA4496C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="912" y="576" name="inst_EBCF4B0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="944" y="544" name="inst_E3E10425" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oHand" x="-240" y="336" name="inst_54F65D8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background21" x="208" y="688" w="64" h="64" xo="0" yo="0" id="10000544" name="inst_BE14A59C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -32,6 +32,37 @@ if (depthModifier == 0) {
     image_blend = make_colour_hsv(c_black, 50, 200)
 }
 else depth = -50;
+
+Place = 0
+
+if place_meeting(x + 32,y,oSolid) {
+
+Place = 1
+
+}
+if place_meeting(x - 32,y,oSolid) {
+
+if Place = 1 { if random(2)&gt;1{ Place = 2 } } else { Place = 2 }
+
+}
+
+if place_meeting(x,y + 32,oSolid) {
+
+if Place = 2 { if random(2)&gt;1{ Place = 3 } } else { Place = 3 }
+
+}
+if place_meeting(x,y -32,oSolid) {
+
+if Place = 3 { if random(2)&gt;1{ Place = 4 } } else { Place = 4 }
+
+}
+
+
+if Place = 0 { instance_destroy() }
+if Place = 1 { image_angle = 90   }
+if Place = 2 { image_angle = 270  }
+if Place = 3 { image_angle = 0    }
+if Place = 4 { image_angle = 180  }
 </string>
           </argument>
         </arguments>

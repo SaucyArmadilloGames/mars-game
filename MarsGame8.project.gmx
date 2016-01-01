@@ -376,7 +376,7 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
-    <room>rooms\rTEST</room>
+    <room>rooms\rTest2</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
@@ -392,6 +392,7 @@
     <room>rooms\rTemplate2</room>
     <room>rooms\InfoDump2</room>
     <room>rooms\Slopemania</room>
+    <room>rooms\rTEST</room>
     <room>rooms\DemoRoom</room>
   </rooms>
   <help>
