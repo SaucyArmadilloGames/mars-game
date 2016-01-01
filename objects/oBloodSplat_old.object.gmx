@@ -3,7 +3,7 @@
   <spriteName>sBloodSplat</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>200</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -28,12 +28,8 @@
             <string>Timerr = 0
 TimerrSec = 0
 depth = 1000
-image_xscale = random_range(.8,1.25)
-image_yscale = image_xscale
-Fade = false
-image_angle = random(360)
-x += random_range(-10,10)
-y += random_range(-10,10)
+image_xscale = 1.25
+image_yscale = 1.25
 </string>
           </argument>
         </arguments>
@@ -56,11 +52,24 @@ y += random_range(-10,10)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if Fade = true {
+            <string>Timerr = 0
+TimerrSec = 0
+
+
+/*
+Timerr = Timerr + 1
+TimerrSec = Timerr / room_speed
+LingerTime = 5
+
+image_alpha = 1 - (TimerrSec / LingerTime)
+
+
+if image_alpha &gt; .1 {
+instance_destroy() }
+*/
 if image_alpha &gt; 0 image_alpha -= 0.01;  
 if image_alpha &lt; 0 or image_alpha = 0 {
 instance_destroy() }
-}
 </string>
           </argument>
         </arguments>

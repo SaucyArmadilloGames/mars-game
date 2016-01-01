@@ -73,6 +73,7 @@
         <sprite>sprites\sExplosion</sprite>
         <sprite>sprites\sFreind1Dead</sprite>
         <sprite>sprites\sSplatMark</sprite>
+        <sprite>sprites\sprite137</sprite>
         <sprite>sprites\sBloodSplat</sprite>
         <sprite>sprites\sBlood</sprite>
       </sprites>
@@ -126,7 +127,7 @@
       <sprites name="Weapons">
         <sprite>sprites\sGunDropped</sprite>
         <sprite>sprites\sBombPile</sprite>
-        <sprite>sprites\sStand1</sprite>
+        <sprite>sprites\sStandGun</sprite>
         <sprite>sprites\sBombHand</sprite>
         <sprite>sprites\sGun1</sprite>
         <sprite>sprites\sTarget</sprite>
@@ -154,7 +155,17 @@
     <sprite>sprites\sprite84</sprite>
     <sprite>sprites\sGrub</sprite>
     <sprite>sprites\sBot1</sprite>
-    <sprite>sprites\sprite86</sprite>
+    <sprite>sprites\sBug12</sprite>
+    <sprites name="Blood">
+      <sprite>sprites\sBug11</sprite>
+      <sprite>sprites\sBug13</sprite>
+      <sprite>sprites\sStand1</sprite>
+      <sprite>sprites\sShooter1</sprite>
+      <sprite>sprites\sBugGib1</sprite>
+      <sprite>sprites\sWall2_Long_Blood</sprite>
+      <sprite>sprites\sWall2_Blood</sprite>
+    </sprites>
+    <sprite>sprites\sBugGib</sprite>
     <sprite>sprites\sBug1</sprite>
     <sprite>sprites\sBug2</sprite>
     <sprite>sprites\sBug3</sprite>
@@ -193,11 +204,14 @@
     <background>background\blvl3tutorial</background>
     <background>background\bParkingLot1</background>
     <background>background\Back_test</background>
-    <background>background\BackTest2</background>
+    <background>background\Back</background>
+    <background>background\Back2</background>
+    <background>background\BackBlood</background>
+    <background>background\BackBlood2</background>
+    <background>background\sBackroundMerge</background>
     <background>background\background24</background>
     <background>background\BackTest2Big</background>
     <background>background\background21</background>
-    <background>background\BackroundTest3</background>
     <background>background\bMars</background>
     <background>background\background19</background>
     <background>background\background15</background>
@@ -269,6 +283,10 @@
     <object>objects\oPlayer</object>
     <object>objects\oDoor</object>
     <objects name="Enemys">
+      <object>objects\oBug11</object>
+      <object>objects\oBugGib1</object>
+      <object>objects\object89</object>
+      <object>objects\oBug13</object>
       <object>objects\oBugGib</object>
       <object>objects\oBot1</object>
       <object>objects\oBug</object>
@@ -310,6 +328,8 @@
       <object>objects\oCrate2</object>
       <object>objects\oWall1</object>
       <object>objects\oWall2_Long</object>
+      <object>objects\oWallBlood1</object>
+      <object>objects\oWall2Blood_long</object>
       <object>objects\oWall2</object>
       <object>objects\oBugMass</object>
       <object>objects\oBarrier</object>
@@ -323,6 +343,7 @@
       <object>objects\oGunDropped</object>
       <object>objects\oTurret</object>
       <object>objects\oTurret2</object>
+      <object>objects\oTurret12</object>
       <object>objects\oStand1</object>
       <object>objects\oStand2</object>
       <object>objects\oBombPile</object>
@@ -354,6 +375,7 @@
       <objects name="Fx">
         <object>objects\oSplatMark</object>
         <object>objects\oBloodSplat</object>
+        <object>objects\oBloodSplat_old</object>
         <object>objects\oBlood</object>
         <object>objects\oExplosion</object>
       </objects>
@@ -385,7 +407,8 @@
     <room>rooms\rLevel45</room>
     <room>rooms\rLevel5</room>
     <room>rooms\rLevel7</room>
-    <room>rooms\room17</room>
+    <room>rooms\rLevel8</room>
+    <room>rooms\room19</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>
     <room>rooms\rTemplate</room>

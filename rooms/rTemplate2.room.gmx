@@ -69,7 +69,7 @@
     <instance objName="oWall2_Long" x="64" y="112" name="inst_7B319AE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="BackTest2" x="48" y="32" w="64" h="64" xo="0" yo="0" id="10000357" name="inst_1525AC8A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Back" x="48" y="32" w="64" h="64" xo="0" yo="0" id="10000357" name="inst_1525AC8A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
