@@ -188,6 +188,10 @@
     <sprite>sprites\sShotGun</sprite>
     <sprite>sprites\sBugMass</sprite>
     <sprite>sprites\sBombSpitter</sprite>
+    <sprite>sprites\sCorpse</sprite>
+    <sprite>sprites\sCeilingLamp</sprite>
+    <sprite>sprites\sDoorLocked</sprite>
+    <sprite>sprites\sTable</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -386,12 +390,16 @@
       <object>objects\oLightingController</object>
       <object>objects\oCredit1</object>
       <object>objects\object90</object>
+      <object>objects\object96</object>
     </objects>
+    <object>objects\oCeilingLight</object>
     <object>objects\oLamp</object>
-    <object>objects\oDj</object>
+    <object>objects\oDoorLocked</object>
+    <object>objects\oCorpse</object>
     <object>objects\oRockGib</object>
     <object>objects\oGrapple</object>
     <object>objects\oStart</object>
+    <object>objects\oDj</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
@@ -409,6 +417,7 @@
     <room>rooms\rLevel7</room>
     <room>rooms\rLevel8</room>
     <room>rooms\room19</room>
+    <room>rooms\room21</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>
     <room>rooms\rTemplate</room>
