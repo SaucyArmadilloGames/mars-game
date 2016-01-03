@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1277</w>
-    <h>761</h>
+    <w>1008</w>
+    <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>372</xoffset>
-    <yoffset>740</yoffset>
+    <xoffset>1680</xoffset>
+    <yoffset>661</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -140,6 +140,8 @@
     <instance objName="oBug13" x="400" y="432" name="inst_9568777B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug13" x="448" y="352" name="inst_01E36A2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug13" x="272" y="464" name="inst_125AC13E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLightingController" x="0" y="0" name="inst_E0B1F8DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oGlowFlyMom" x="336" y="128" name="inst_BD38FB3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="BackBlood2" x="96" y="416" w="128" h="128" xo="0" yo="0" id="10001018" name="inst_02AB435E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

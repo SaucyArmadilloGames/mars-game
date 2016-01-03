@@ -170,6 +170,7 @@
     <sprite>sprites\sBug2</sprite>
     <sprite>sprites\sBug3</sprite>
     <sprite>sprites\sBug4</sprite>
+    <sprite>sprites\sGlowFlyMom</sprite>
     <sprite>sprites\sStand</sprite>
     <sprite>sprites\sShooter</sprite>
     <sprite>sprites\sGrinder</sprite>
@@ -192,6 +193,7 @@
     <sprite>sprites\sCeilingLamp</sprite>
     <sprite>sprites\sDoorLocked</sprite>
     <sprite>sprites\sTable</sprite>
+    <sprite>sprites\sPlatform</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -295,8 +297,10 @@
       <object>objects\oBot1</object>
       <object>objects\oBug</object>
       <object>objects\oBug2</object>
+      <object>objects\oGlowFlyMom</object>
       <object>objects\oBug3</object>
       <object>objects\oFly</object>
+      <object>objects\oGlowFly</object>
       <object>objects\oGrub</object>
     </objects>
     <objects name="Systems">
@@ -392,6 +396,7 @@
       <object>objects\object90</object>
       <object>objects\object96</object>
     </objects>
+    <object>objects\oPlatform1</object>
     <object>objects\oCeilingLight</object>
     <object>objects\oLamp</object>
     <object>objects\oDoorLocked</object>
