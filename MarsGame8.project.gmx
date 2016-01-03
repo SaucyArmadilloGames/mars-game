@@ -194,6 +194,9 @@
     <sprite>sprites\sDoorLocked</sprite>
     <sprite>sprites\sTable</sprite>
     <sprite>sprites\sPlatform</sprite>
+    <sprite>sprites\sBoss</sprite>
+    <sprite>sprites\sBoss2</sprite>
+    <sprite>sprites\sBoss3</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -396,6 +399,7 @@
       <object>objects\object90</object>
       <object>objects\object96</object>
     </objects>
+    <object>objects\oBoss1</object>
     <object>objects\oPlatform1</object>
     <object>objects\oCeilingLight</object>
     <object>objects\oLamp</object>
@@ -411,6 +415,7 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
+    <room>rooms\room19</room>
     <room>rooms\rTest2</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
@@ -421,7 +426,6 @@
     <room>rooms\rLevel5</room>
     <room>rooms\rLevel7</room>
     <room>rooms\rLevel8</room>
-    <room>rooms\room19</room>
     <room>rooms\room21</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>

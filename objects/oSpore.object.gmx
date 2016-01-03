@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>Die = false
+Grav = false
 </string>
           </argument>
         </arguments>
@@ -62,8 +63,6 @@ Die = true
 if place_meeting(X,Y,oPlayer) { 
 
 //with the player hurt them
- 
-  
 Die = true   
      }
      
@@ -73,6 +72,9 @@ instance_create(x,y,oSplatMark)
 audio_play_sound(aSplat3,1,false)
 instance_destroy()
 }
+
+//do gravity
+if Grav = true { if vspeed &lt; 4 {vspeed += .05} }
 </string>
           </argument>
         </arguments>

@@ -42,7 +42,7 @@ Health = 2
 Rotation = 0
 MatureTime = random_range(40,90)
 GoForPlayer = false
-
+Stuck = 0
 Follower = floor(random(2))
 </string>
           </argument>
@@ -71,9 +71,14 @@ ScAllDudes()
 
 ScFlameDamage()
 
+ScKillMeIfILeave()
+
 if place_meeting(x+hspeed,y+vspeed, oSolid ) {
+Stuck += 1
 move_bounce_all( true );
-}
+} else { if Stuck &lt; 0 {Stuck -= 1} }
+
+if Stuck &gt; 4 { instance_destroy() }
 
 Timerr = Timerr + 3
 TimerrSec = Timerr / room_speed
