@@ -91,6 +91,9 @@ image_index = 1
           <argument>
             <kind>1</kind>
             <string>draw_self()
+
+//if ScCanSee(oPlayer,1) = true {draw_text(x,y,'I CAN SEE HIM THAT BUGGER')} else {draw_text(x,y,'WHERE DID THAT SHOE GO OFF TO')}
+
 /*
 draw_text(x, y, "RedOpen: " + string(global.RedOpen)); 
 draw_text(x, y+7, "RedOpenC: " + string(global.RedOpenC)); 

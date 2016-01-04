@@ -122,6 +122,7 @@
         <sprite>sprites\sGreenPlate</sprite>
         <sprite>sprites\sSwitchOrange</sprite>
         <sprite>sprites\sOrangePlate</sprite>
+        <sprite>sprites\sDangerSwitch</sprite>
         <sprite>sprites\sSwitchDestroyed</sprite>
       </sprites>
       <sprites name="Weapons">
@@ -170,6 +171,7 @@
     <sprite>sprites\sBug2</sprite>
     <sprite>sprites\sBug3</sprite>
     <sprite>sprites\sBug4</sprite>
+    <sprite>sprites\sGlowFlyMom</sprite>
     <sprite>sprites\sStand</sprite>
     <sprite>sprites\sShooter</sprite>
     <sprite>sprites\sGrinder</sprite>
@@ -193,6 +195,10 @@
     <sprite>sprites\sDoorLocked</sprite>
     <sprite>sprites\sTable</sprite>
     <sprite>sprites\sOneWayPlatform</sprite>
+    <sprite>sprites\sPlatform</sprite>
+    <sprite>sprites\sBoss</sprite>
+    <sprite>sprites\sBoss2</sprite>
+    <sprite>sprites\sBoss3</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -274,8 +280,10 @@
       <script>scripts\ScAssertBlue.gml</script>
       <script>scripts\ScAssertOrange.gml</script>
       <script>scripts\ScAssertPurple.gml</script>
+      <script>scripts\ScAssertDanger.gml</script>
     </scripts>
     <script>scripts\ScPlaySplat.gml</script>
+    <script>scripts\ScCanSee.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
@@ -296,8 +304,10 @@
       <object>objects\oBot1</object>
       <object>objects\oBug</object>
       <object>objects\oBug2</object>
+      <object>objects\oGlowFlyMom</object>
       <object>objects\oBug3</object>
       <object>objects\oFly</object>
+      <object>objects\oGlowFly</object>
       <object>objects\oGrub</object>
     </objects>
     <objects name="Systems">
@@ -312,6 +322,7 @@
       <object>objects\oOrangeSwitch</object>
       <object>objects\oPlateOrange</object>
       <object>objects\oPurpleSwitch</object>
+      <object>objects\oDangerSwitch</object>
       <object>objects\oPlatePurple</object>
       <objects name="Grates">
         <object>objects\pGrate</object>
@@ -394,6 +405,8 @@
       <object>objects\object90</object>
       <object>objects\object96</object>
     </objects>
+    <object>objects\oBoss1</object>
+    <object>objects\oPlatform1</object>
     <object>objects\oCeilingLight</object>
     <object>objects\oLamp</object>
     <object>objects\oDoorLocked</object>
@@ -408,6 +421,8 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
+    <room>rooms\room19</room>
+    <room>rooms\rTest2</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
@@ -417,7 +432,6 @@
     <room>rooms\rLevel5</room>
     <room>rooms\rLevel7</room>
     <room>rooms\rLevel8</room>
-    <room>rooms\room19</room>
     <room>rooms\room21</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>

@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>Bounced = false
 audio_play_sound(aPIll,2,false)
+Damage = 1
 </string>
           </argument>
         </arguments>

@@ -32,7 +32,7 @@ Shoot = false
 Wait = 0
 Bait = 0
 Lazers = 0
-Health = 5
+Health = 1
 </string>
           </argument>
         </arguments>
@@ -83,6 +83,7 @@ if Shoot = true {
     if Lazers &gt; 30 { Wait = 0 Lazers = 0 }        
     }
 } else {Wait = 0  }
+
 if collision_line(x,y,oPlayer.x,oPlayer.y,oSolid,false,true){
 Shoot = false
 } else {
