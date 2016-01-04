@@ -298,7 +298,7 @@
     <objects name="Enemys">
       <object>objects\oBug11</object>
       <object>objects\oBugGib1</object>
-      <object>objects\object89</object>
+      <object>objects\oBug12</object>
       <object>objects\oBug13</object>
       <object>objects\oBugGib</object>
       <object>objects\oBot1</object>
@@ -421,8 +421,6 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
-    <room>rooms\room19</room>
-    <room>rooms\rTest2</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
@@ -432,6 +430,7 @@
     <room>rooms\rLevel5</room>
     <room>rooms\rLevel7</room>
     <room>rooms\rLevel8</room>
+    <room>rooms\rBoss1</room>
     <room>rooms\room21</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>

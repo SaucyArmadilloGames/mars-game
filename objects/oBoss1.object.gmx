@@ -137,6 +137,8 @@ Timer1 = 0
 
 if Health &lt; 0 { 
 //do epic death stuff
+repeat (30) {instance_create(x,y,oBugGib)}
+repeat (8) {instance_create(x,y,oSplatMark)}
 instance_destroy()
 }
 </string>

@@ -117,9 +117,9 @@
     <instance objName="oWall2Blood_long" x="32" y="544" name="inst_20B67807" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="oWall2Blood_long" x="32" y="448" name="inst_E3907005" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="oWallBlood1" x="32" y="352" name="inst_B8850A39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object89" x="128" y="448" name="inst_A9619055" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object89" x="96" y="384" name="inst_C6B61C47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object89" x="160" y="448" name="inst_B49C5257" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="128" y="448" name="inst_A9619055" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="96" y="384" name="inst_C6B61C47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="160" y="448" name="inst_B49C5257" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug11" x="224" y="512" name="inst_639CA3EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug11" x="192" y="512" name="inst_13E0A568" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug11" x="96" y="512" name="inst_922431D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
