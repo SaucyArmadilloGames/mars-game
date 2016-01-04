@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Health = 1000
+            <string>Health = 1500
 Max = Health
 State = 0
 Dir = ceil(random(2))
@@ -53,7 +53,9 @@ Timer2 = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>IncBullet = instance_place(x,y,oProjectile)
+            <string>image_xscale = 1
+image_yscale = image_xscale
+IncBullet = instance_place(x,y,oProjectile)
 if instance_exists(IncBullet) {
 
 if random(2) &gt; 1 {
@@ -111,6 +113,7 @@ if ScCanSee(oPlayer,1) = true {
 
 //Shooting
 Timer2 += 1
+if Timer2 &gt; room_speed * 7 { image_xscale = random_range(.9,1.1) image_yscale = image_xscale }
 if Timer2 &gt; room_speed * 8 {
 repeat (48) { 
 Proj = instance_create(x,y,oSpore) 
@@ -122,7 +125,8 @@ instance_create(x,y,oBug3)
 Timer2 = 0
 }
 //spawning enemys
-Timer1 += 1
+//Timer1 += 1
+Timer1 = Timer2
 if Timer1 &gt; room_speed * 20 {
 repeat (1) { instance_create(x,y,oBug3) }
 repeat (3) { instance_create(x,y,oBug2) }
