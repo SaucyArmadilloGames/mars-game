@@ -192,6 +192,7 @@
     <sprite>sprites\sCeilingLamp</sprite>
     <sprite>sprites\sDoorLocked</sprite>
     <sprite>sprites\sTable</sprite>
+    <sprite>sprites\sOneWayPlatform</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -340,6 +341,7 @@
       <object>objects\oWall3</object>
       <object>objects\oCrate1</object>
       <object>objects\oWall</object>
+      <object>objects\oOneWayPlatform</object>
     </objects>
     <objects name="Guns">
       <object>objects\oGun</object>
@@ -406,7 +408,6 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
-    <room>rooms\rTest2</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
@@ -423,6 +424,7 @@
     <room>rooms\rTemplate</room>
     <room>rooms\rTemplate2</room>
     <room>rooms\InfoDump2</room>
+    <room>rooms\rTest2</room>
     <room>rooms\Slopemania</room>
     <room>rooms\rTEST</room>
     <room>rooms\DemoRoom</room>

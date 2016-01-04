@@ -164,9 +164,6 @@
     <instance objName="oWall2" x="624" y="456" name="inst_4875AD43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="592" y="400" name="inst_497F9B9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="552" y="328" name="inst_49843F0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall1" x="888" y="648" name="inst_59D993E5" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="oWall1" x="888" y="552" name="inst_328626BD" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="oWall1" x="888" y="368" name="inst_A7106E54" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="oGrateBlue" x="800" y="432" name="inst_9907E57A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="oGrateBlue" x="800" y="464" name="inst_4633C0EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="oBlueSwitch" x="752" y="448" name="inst_B637F69D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -223,7 +220,6 @@
     <instance objName="oWall2" x="1072" y="720" name="inst_220CF3DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="1136" y="688" name="inst_0B13E167" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGrateBlue" x="1392" y="528" name="inst_14BEB1B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="oWall1" x="888" y="456" name="inst_5C7253AC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="oWall1" x="888" y="280" name="inst_19DEFBA6" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="oWall2_Long" x="1424" y="496" name="inst_CCBFDC71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2_Long" x="1424" y="592" name="inst_70B4E732" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -280,9 +276,9 @@
     <instance objName="oWall2" x="848" y="720" name="inst_D059B621" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="880" y="688" name="inst_8528152C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="864" y="656" name="inst_14730A79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall2" x="880" y="624" name="inst_BBA4A7B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall2" x="880" y="624" name="inst_0715E800" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall2" x="832" y="624" name="inst_66CEADF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall2" x="848" y="560" name="inst_BBA4A7B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall2" x="848" y="512" name="inst_0715E800" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall2" x="1040" y="448" name="inst_66CEADF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="816" y="688" name="inst_A6E11FB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="784" y="720" name="inst_5EA1C569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="752" y="720" name="inst_1E194CED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -352,7 +348,6 @@
     <instance objName="oBug" x="520" y="720" name="inst_151FDE3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug" x="496" y="720" name="inst_08D4729F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug" x="424" y="720" name="inst_BC9F86BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBug" x="888" y="528" name="inst_0BE0B522" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug" x="736" y="464" name="inst_8850A236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug" x="1136" y="592" name="inst_8812B959" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug" x="543" y="655" name="inst_68C6E45E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="181"/>
@@ -420,6 +415,28 @@
     <instance objName="oFly" x="656" y="272" name="inst_DD92E279" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oFly" x="544" y="672" name="inst_59B0B58F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBug3" x="1072" y="432" name="inst_0D9D1107" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="880" y="656" name="inst_D8904805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="864" y="480" name="inst_FCEE62E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="880" y="352" name="inst_87B308F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="848" y="352" name="inst_A035312F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="816" y="352" name="inst_9E823E41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="832" y="480" name="inst_05414170" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="896" y="480" name="inst_9179FF53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="848" y="656" name="inst_AF176DC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="816" y="656" name="inst_6FAF2CA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="1168" y="608" name="inst_777A768D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="1328" y="576" name="inst_9B5EA7F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="1136" y="448" name="inst_8D73987B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="880" y="608" name="inst_28898147" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="848" y="608" name="inst_EA0DC49D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="816" y="608" name="inst_8E9E83F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="880" y="528" name="inst_0D47674E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="848" y="528" name="inst_612FC19F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="816" y="528" name="inst_17B5F4B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="848" y="400" name="inst_531A0128" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="880" y="400" name="inst_7B2A2D02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="816" y="400" name="inst_56FF44D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="1168" y="656" name="inst_0CAF1AE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Back" x="0" y="672" w="64" h="64" xo="0" yo="0" id="10000119" name="inst_9279C570" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

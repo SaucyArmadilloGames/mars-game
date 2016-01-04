@@ -174,7 +174,6 @@
     <instance objName="oWall2" x="752" y="656" name="inst_655F6E32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="672" y="688" name="inst_C417F090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="672" y="656" name="inst_90A7CFDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall1" x="696" y="440" name="inst_C6136EE1" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="224" y="304" name="inst_DB860C34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall2_Long" x="688" y="608" name="inst_7E08F797" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="oWall2" x="480" y="720" name="inst_B9BAEE4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -350,6 +349,8 @@
     <instance objName="oFly" x="432" y="320" name="inst_F01F79C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oFly" x="912" y="656" name="inst_BF1A7CA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorLocked" x="32" y="720" name="inst_C53000A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="704" y="432" name="inst_645A3C3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oOneWayPlatform" x="736" y="432" name="inst_D8AC6237" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="360" y="528" w="16" h="16" xo="0" yo="0" id="10000003" name="inst_1BD70263" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
