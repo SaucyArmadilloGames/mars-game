@@ -122,6 +122,7 @@
         <sprite>sprites\sGreenPlate</sprite>
         <sprite>sprites\sSwitchOrange</sprite>
         <sprite>sprites\sOrangePlate</sprite>
+        <sprite>sprites\sDangerSwitch</sprite>
         <sprite>sprites\sSwitchDestroyed</sprite>
       </sprites>
       <sprites name="Weapons">
@@ -278,8 +279,10 @@
       <script>scripts\ScAssertBlue.gml</script>
       <script>scripts\ScAssertOrange.gml</script>
       <script>scripts\ScAssertPurple.gml</script>
+      <script>scripts\ScAssertDanger.gml</script>
     </scripts>
     <script>scripts\ScPlaySplat.gml</script>
+    <script>scripts\ScCanSee.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
@@ -318,6 +321,7 @@
       <object>objects\oOrangeSwitch</object>
       <object>objects\oPlateOrange</object>
       <object>objects\oPurpleSwitch</object>
+      <object>objects\oDangerSwitch</object>
       <object>objects\oPlatePurple</object>
       <objects name="Grates">
         <object>objects\pGrate</object>

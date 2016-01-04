@@ -107,10 +107,12 @@ sprite_index = sBoss3
 State = 1
 }}
 
+if ScCanSee(oPlayer,1) = true {
+
 //Shooting
 Timer2 += 1
 if Timer2 &gt; room_speed * 8 {
-repeat (32) { 
+repeat (48) { 
 Proj = instance_create(x,y,oSpore) 
 Proj.direction = (random(360))
 Proj.speed = random_range(1,14)
@@ -127,6 +129,7 @@ repeat (3) { instance_create(x,y,oBug2) }
 Timer1 = 0
 }
 
+}
 
 if Health &lt; 0 { 
 //do epic death stuff
