@@ -231,6 +231,7 @@
     <background>background\br_black</background>
     <background>background\br_BackroundxD</background>
     <background>background\BackRoundMenu1</background>
+    <background>background\BrDust</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
