@@ -230,7 +230,8 @@
     <background>background\background18</background>
     <background>background\br_black</background>
     <background>background\br_BackroundxD</background>
-    <background>background\BackRoundMenu1</background>
+    <background>background\BackgoundMenu1</background>
+    <background>background\BackgroundMenu2</background>
     <background>background\BrDust</background>
     <background>background\BrDust2</background>
   </backgrounds>
@@ -292,6 +293,7 @@
   </shaders>
   <fonts name="fonts">
     <font>fonts\Font1</font>
+    <font>fonts\Font2</font>
   </fonts>
   <objects name="objects">
     <object>objects\oHand</object>

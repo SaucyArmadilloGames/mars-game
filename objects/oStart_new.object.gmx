@@ -30,8 +30,8 @@ image_speed = 0
 Timerr = 0
 Counting = false
 
-textOpacity = 0
-fadeOut = false
+textOpacity = 0;
+fadeOut = false;
 </string>
           </argument>
         </arguments>
@@ -92,6 +92,26 @@ else
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
+        <id>524</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_color</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>13</kind>
+            <string>16777215</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>526</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -130,7 +150,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_colour(520,715,"Press E To Continue", 0,0,0,0,textOpacity)
+            <string>
+draw_text_colour(520,710,"Press E To Continue", 0,0,0,0,textOpacity)
 draw_text_colour(520,710,"Press E To Continue", c_white,c_white,c_white,c_white,textOpacity)
 
 </string>
