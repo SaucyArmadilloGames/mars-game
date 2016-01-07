@@ -232,6 +232,7 @@
     <background>background\br_BackroundxD</background>
     <background>background\BackRoundMenu1</background>
     <background>background\BrDust</background>
+    <background>background\BrDust2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
