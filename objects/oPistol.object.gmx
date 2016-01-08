@@ -62,7 +62,7 @@ ScWeaponCreate();
             <kind>1</kind>
             <string>ScPickup();
 
-if (PickedUp) { ScShoot(); }
+if (PickedUp) { ScShoot(); image_index = 1 } else {image_index = 0}
 </string>
           </argument>
         </arguments>
