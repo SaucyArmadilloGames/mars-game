@@ -31,6 +31,7 @@ State = 0
 Dir = ceil(random(2))
 Timer1 = 0
 Timer2 = 0
+Death = 0
 </string>
           </argument>
         </arguments>
@@ -115,6 +116,7 @@ if ScCanSee(oPlayer,1) = true {
 Timer2 += 1
 if Timer2 &gt; room_speed * 7 { image_xscale = random_range(.9,1.1) image_yscale = image_xscale }
 if Timer2 &gt; room_speed * 8 {
+repeat (5) { ScPlaySplat() }
 repeat (48) { 
 Proj = instance_create(x,y,oSpore) 
 Proj.direction = (random(360))
@@ -128,6 +130,7 @@ Timer2 = 0
 //Timer1 += 1
 Timer1 = Timer2
 if Timer1 &gt; room_speed * 20 {
+repeat (1) { ScPlaySplat() }
 repeat (1) { instance_create(x,y,oBug3) }
 repeat (3) { instance_create(x,y,oBug2) }
 Timer1 = 0
@@ -139,7 +142,10 @@ if Health &lt; 0 {
 //do epic death stuff
 repeat (30) {instance_create(x,y,oBugGib)}
 repeat (8) {instance_create(x,y,oSplatMark)}
-instance_destroy()
+repeat (2) { ScPlaySplat() }
+Death += 1
+if Death &gt; room_speed / 8 { instance_destroy() }
+
 }
 </string>
           </argument>
