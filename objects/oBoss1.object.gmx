@@ -114,8 +114,8 @@ if ScCanSee(oPlayer,1) = true {
 
 //Shooting
 Timer2 += 1
-if Timer2 &gt; room_speed * 7 { image_xscale = random_range(.9,1.1) image_yscale = image_xscale }
-if Timer2 &gt; room_speed * 8 {
+if Timer2 &gt; room_speed * 4 { image_xscale = random_range(.9,1.1) image_yscale = image_xscale }
+if Timer2 &gt; room_speed * 5 {
 repeat (5) { ScPlaySplat() }
 repeat (48) { 
 Proj = instance_create(x,y,oSpore) 
