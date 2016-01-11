@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surf = surface_create(room_width, room_height);
+            <string>///old
+/*
+surf = surface_create(room_width, room_height);
 
 // Clear the surface
 
@@ -34,6 +36,29 @@ draw_clear_alpha(c_black, 0);
 
 // Reset to application surface
 surface_reset_target();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_activate_region(view_xview[0],view_yview[0],view_wview[0],view_hview[0],true)
+global.light=surface_create(view_wview,view_hview)
+//instance_create(0,0,obj_cursor)
 </string>
           </argument>
         </arguments>
@@ -56,7 +81,10 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Surfaces are volatile 
+            <string>///old
+/*
+
+// Surfaces are volatile 
 // Always check that they haven't been destroyed 
 if (surface_exists(surf)) {
     surface_set_target(surf);
@@ -104,6 +132,30 @@ background_x[1] -= 0.5;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>surface_set_target(global.light)
+draw_set_color(c_gray)
+draw_rectangle(0,0,view_wview,view_hview,false)
+surface_reset_target()
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="8" enumb="73">
       <action>
@@ -122,7 +174,10 @@ background_x[1] -= 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Draw the surface or create a new one
+            <string>///old
+/*
+
+// Draw the surface or create a new one
 // Be sure to use views, even if it isn't necessary for your game
 // This trick bypasses an issue with resizing the game window
 // DX requires that surfaces be destroyed when resizing
@@ -133,6 +188,51 @@ if (!surface_exists(surf)) {
         draw_surface(surf, 0, 0);
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_blend_mode(bm_subtract)
+draw_surface(global.light,view_xview,view_yview)
+draw_set_blend_mode(bm_normal)
 </string>
           </argument>
         </arguments>
