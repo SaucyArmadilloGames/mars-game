@@ -199,6 +199,7 @@
     <sprite>sprites\sBoss</sprite>
     <sprite>sprites\sBoss2</sprite>
     <sprite>sprites\sBoss3</sprite>
+    <sprite>sprites\sBloodSpore</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -234,6 +235,7 @@
     <background>background\BackgroundMenu2</background>
     <background>background\BrDust</background>
     <background>background\BrDust2</background>
+    <background>background\background33</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -387,6 +389,7 @@
       <object>objects\oBullet</object>
       <object>objects\oProjectile</object>
       <object>objects\oSpore</object>
+      <object>objects\oBloodSpore</object>
     </objects>
     <objects name="Old zombie derps bs">
       <objects name="Garbage">
@@ -432,8 +435,8 @@
     <room>rooms\rLevel6</room>
     <room>rooms\rLevel45</room>
     <room>rooms\rLevel5</room>
-    <room>rooms\rLevel7</room>
     <room>rooms\rLevel8</room>
+    <room>rooms\rLevel7</room>
     <room>rooms\rBoss1</room>
     <room>rooms\room21</room>
     <room>rooms\LooseScreen</room>

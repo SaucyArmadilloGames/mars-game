@@ -74,6 +74,7 @@ instance_destroy()
 }
 
 //do gravity
+Grav = true
 if Grav = true { if vspeed &lt; 8 {vspeed += .05} }
 </string>
           </argument>

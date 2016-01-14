@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>768</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1000</w>
-    <h>600</h>
+    <w>1874</w>
+    <h>1096</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -25,10 +25,10 @@
     <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
-    <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>87</xoffset>
-    <yoffset>47</yoffset>
+    <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
+    <page>0</page>
+    <xoffset>-294</xoffset>
+    <yoffset>-79</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="br_black" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -143,6 +143,154 @@
     <instance objName="oDoorLocked" x="800" y="624" name="inst_3CA8F5EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCorpse" x="455" y="629" name="inst_DC96AAE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCorpse" x="740" y="629" name="inst_0A8EE347" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall2Blood_long" x="1008" y="592" name="inst_0C8FDE12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="oWall2Blood_long" x="1008" y="496" name="inst_4624AF3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="oWall2Blood_long" x="1008" y="400" name="inst_FFBE2BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="oWall2Blood_long" x="869" y="661" name="inst_04D9F6D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-30"/>
+    <instance objName="oWall2Blood_long" x="944" y="696" name="inst_85E35776" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="48" y="16" name="inst_C0AD212D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="48" y="48" name="inst_048158DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="48" y="128" name="inst_381309A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="48" y="144" name="inst_45969DDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="48" y="208" name="inst_31049F59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="112" y="240" name="inst_17095D0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="128" y="240" name="inst_5CE5E532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="144" y="176" name="inst_997691C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="144" y="64" name="inst_032A0862" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="144" y="80" name="inst_3D4D0FDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="208" y="144" name="inst_916B7B6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="208" y="112" name="inst_60291A0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="224" y="112" name="inst_509A424C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="320" y="112" name="inst_5739ED21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="400" y="112" name="inst_F2F79D4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="224" y="240" name="inst_51E11F89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="320" y="240" name="inst_2F70F44C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="416" y="240" name="inst_FAD325D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="432" y="240" name="inst_7225638C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="464" y="144" name="inst_A6F167B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="464" y="128" name="inst_E1BCA357" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="496" y="176" name="inst_69A24300" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="480" y="240" name="inst_04B2CD51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="560" y="240" name="inst_89110A0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="592" y="176" name="inst_0E3EED30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="608" y="176" name="inst_0B38C2C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="624" y="176" name="inst_05886A9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="656" y="240" name="inst_0701A260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="736" y="240" name="inst_954BDD97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="720" y="176" name="inst_CCBD8555" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="736" y="176" name="inst_69580E43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="832" y="176" name="inst_96E48AC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="944" y="176" name="inst_A7B6C456" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="976" y="176" name="inst_6CC8B351" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="976" y="208" name="inst_18BBB33D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="976" y="240" name="inst_82D82A8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="880" y="272" name="inst_C5C986C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="880" y="304" name="inst_3DDEABB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="880" y="320" name="inst_B8F6F6EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="848" y="368" name="inst_A24D136C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="752" y="368" name="inst_DB4E8D1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="768" y="368" name="inst_7CC940CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="624" y="368" name="inst_0E94B5DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="640" y="368" name="inst_9A83B5C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="560" y="368" name="inst_A72BC18F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="512" y="368" name="inst_49F6CC68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="528" y="368" name="inst_67D9A25A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="496" y="368" name="inst_CED2D72D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="416" y="368" name="inst_CBA25825" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="400" y="368" name="inst_C19AA7E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="256" y="368" name="inst_E23E69C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="272" y="368" name="inst_0854F08F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="288" y="368" name="inst_6B02A493" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="336" y="368" name="inst_14462AA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="224" y="368" name="inst_A8E0D082" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="208" y="384" name="inst_584149CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="208" y="448" name="inst_3F17EFB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="208" y="480" name="inst_861F50CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="400" y="496" name="inst_0009BECA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="368" y="464" name="inst_0F4BF5DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="464" y="432" name="inst_6CA840B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="544" y="432" name="inst_3A8FA92A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="752" y="432" name="inst_F7CF22D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="656" y="432" name="inst_123EDDAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="848" y="432" name="inst_EF602BB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="464" y="496" name="inst_0640A781" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="480" y="496" name="inst_63319F07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="528" y="496" name="inst_2709B7DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="576" y="496" name="inst_C56DA135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="592" y="496" name="inst_ACE5C093" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="608" y="496" name="inst_0D559559" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="624" y="496" name="inst_BD2085E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="688" y="496" name="inst_C1605304" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="768" y="496" name="inst_7740A353" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="544" y="624" name="inst_2EE2AC0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="640" y="624" name="inst_182321AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="656" y="624" name="inst_452AF9BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug11" x="832" y="624" name="inst_B1F28F5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="640" y="576" name="inst_9F047180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="912" y="544" name="inst_52437AF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="416" y="544" name="inst_932057C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="272" y="416" name="inst_2FD486C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="880" y="384" name="inst_1CDB6265" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="672" y="176" name="inst_C77B1478" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug12" x="240" y="192" name="inst_2AC3F1DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug13" x="384" y="144" name="inst_84C78CFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug13" x="352" y="400" name="inst_22FEB992" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBug13" x="576" y="528" name="inst_CD2FEA2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="448" y="608" name="inst_6499A4B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="480" y="592" name="inst_C07CC742" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="464" y="624" name="inst_A997C95A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="736" y="624" name="inst_627F257D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="752" y="608" name="inst_72135A48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="768" y="624" name="inst_0EEEAB5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="736" y="592" name="inst_9A2A8F00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="800" y="560" name="inst_89DEB7EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="640" y="544" name="inst_5D0D6544" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="592" y="576" name="inst_F68DABC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="704" y="512" name="inst_0F354D82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="448" y="384" name="inst_170B7A7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="656" y="400" name="inst_D9CB57BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="688" y="384" name="inst_FA98C9AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="752" y="416" name="inst_600A9387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="672" y="416" name="inst_3DB82E8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="752" y="400" name="inst_926B1426" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="912" y="384" name="inst_1EFDFC37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="848" y="240" name="inst_357F6CEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="880" y="240" name="inst_62184CB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="864" y="240" name="inst_A2B81BCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="864" y="256" name="inst_769A03B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="912" y="224" name="inst_31E871B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="816" y="208" name="inst_6C532A74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="864" y="176" name="inst_9CAA4DA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="640" y="192" name="inst_2F80B47F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="352" y="240" name="inst_0A3EFDDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="352" y="160" name="inst_EDE7D023" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="304" y="208" name="inst_FB185C71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="352" y="208" name="inst_3C27BFC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="320" y="208" name="inst_BFE1D0C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="320" y="176" name="inst_B3BA8867" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="336" y="192" name="inst_CE4C3BEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="384" y="240" name="inst_64A21ADE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="256" y="256" name="inst_CB1682BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="288" y="240" name="inst_BB443492" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="320" y="240" name="inst_3AEC06DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="304" y="240" name="inst_79B189D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="320" y="224" name="inst_A7FE5602" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="432" y="192" name="inst_30B4771F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="544" y="192" name="inst_86416278" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="224" y="144" name="inst_3F6297F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="96" y="208" name="inst_79DE1DF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="112" y="128" name="inst_696E8D4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBloodSplat" x="64" y="48" name="inst_E66D635F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oRedPlate" x="960" y="664" name="inst_123B56FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLamp" x="928" y="576" name="inst_94881C8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLamp" x="816" y="240" name="inst_ED889CBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLamp" x="331" y="248" name="inst_41C756C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoor" x="48" y="752" name="inst_7B06CE14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoor" x="80" y="752" name="inst_98970DF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoor" x="112" y="752" name="inst_274C0036" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoor" x="144" y="752" name="inst_45D5B6BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLightingController" x="-16" y="-16" name="inst_E8FCFE4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oAssualt" x="77" y="89" name="inst_E6E76E5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="112" y="96" w="16" h="16" xo="0" yo="0" id="10001021" name="inst_7BCC5F68" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -152,6 +300,44 @@
     <tile bgName="BackBlood2" x="32" y="384" w="128" h="128" xo="0" yo="0" id="10001025" name="inst_DB15E5C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="BackBlood2" x="32" y="512" w="128" h="128" xo="0" yo="0" id="10001026" name="inst_3BCDAC1D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="BackBlood2" x="32" y="640" w="128" h="128" xo="0" yo="0" id="10001027" name="inst_CC71AE78" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="160" y="160" w="128" h="128" xo="0" yo="0" id="10001029" name="inst_9A27BC18" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="160" y="96" w="128" h="128" xo="0" yo="0" id="10001030" name="inst_F113A345" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="288" y="96" w="128" h="128" xo="0" yo="0" id="10001031" name="inst_013BE367" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="288" y="160" w="128" h="128" xo="0" yo="0" id="10001032" name="inst_C85B7B79" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="352" y="96" w="128" h="128" xo="0" yo="0" id="10001033" name="inst_5FA62A02" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="352" y="160" w="128" h="128" xo="0" yo="0" id="10001034" name="inst_725CB123" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="480" y="160" w="128" h="128" xo="0" yo="0" id="10001035" name="inst_B067446F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="608" y="160" w="128" h="128" xo="0" yo="0" id="10001036" name="inst_8C23DFC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="736" y="160" w="128" h="128" xo="0" yo="0" id="10001037" name="inst_B9A7E85A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="864" y="160" w="128" h="128" xo="0" yo="0" id="10001038" name="inst_D0BBCE83" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="864" y="288" w="128" h="128" xo="0" yo="0" id="10001039" name="inst_34595218" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="864" y="416" w="128" h="128" xo="0" yo="0" id="10001040" name="inst_3A834345" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="736" y="352" w="128" h="128" xo="0" yo="0" id="10001041" name="inst_A4809800" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="608" y="352" w="128" h="128" xo="0" yo="0" id="10001042" name="inst_15E0D0C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="480" y="352" w="128" h="128" xo="0" yo="0" id="10001043" name="inst_10CBB75F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="352" y="352" w="128" h="128" xo="0" yo="0" id="10001044" name="inst_9BBBB41A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="224" y="352" w="128" h="128" xo="0" yo="0" id="10001045" name="inst_FD3E510E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="168" y="352" w="128" h="128" xo="0" yo="0" id="10001046" name="inst_82D8D118" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="160" y="480" w="128" h="128" xo="0" yo="0" id="10001047" name="inst_C1061CE1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="288" y="480" w="128" h="128" xo="0" yo="0" id="10001048" name="inst_31ADAD1D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="192" y="608" w="128" h="128" xo="0" yo="0" id="10001049" name="inst_66E998CB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="416" y="480" w="128" h="128" xo="0" yo="0" id="10001050" name="inst_8C79F78B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="320" y="608" w="128" h="128" xo="0" yo="0" id="10001051" name="inst_0A884B33" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="448" y="608" w="128" h="128" xo="0" yo="0" id="10001052" name="inst_4F63A7B1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="544" y="480" w="128" h="128" xo="0" yo="0" id="10001053" name="inst_37805DF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="672" y="480" w="128" h="128" xo="0" yo="0" id="10001054" name="inst_8411E761" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="800" y="480" w="128" h="128" xo="0" yo="0" id="10001055" name="inst_D3BFE6F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="864" y="544" w="128" h="128" xo="0" yo="0" id="10001056" name="inst_4560AAB6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="736" y="608" w="128" h="128" xo="0" yo="0" id="10001057" name="inst_CB5C39DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="608" y="608" w="128" h="128" xo="0" yo="0" id="10001058" name="inst_99741E27" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="576" y="608" w="128" h="128" xo="0" yo="0" id="10001059" name="inst_C724E09B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="864" y="672" w="128" h="128" xo="0" yo="0" id="10001060" name="inst_01A9D68B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="736" y="736" w="128" h="128" xo="0" yo="0" id="10001061" name="inst_4AC7D9F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="608" y="736" w="128" h="128" xo="0" yo="0" id="10001062" name="inst_D7C18BC7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="480" y="736" w="128" h="128" xo="0" yo="0" id="10001063" name="inst_294CBDCF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="352" y="736" w="128" h="128" xo="0" yo="0" id="10001064" name="inst_6129460A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="224" y="736" w="128" h="128" xo="0" yo="0" id="10001065" name="inst_628E2C84" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="BackBlood2" x="192" y="736" w="128" h="128" xo="0" yo="0" id="10001066" name="inst_0736ACAB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
