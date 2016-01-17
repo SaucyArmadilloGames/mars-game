@@ -86,7 +86,7 @@ if (PickedUp) { ScShoot(); image_index = 1 } else {image_index = 0}
           <argument>
             <kind>1</kind>
             <string>draw_self()
-draw_text(x,y,string(Clip))
+//draw_text(x,y,string(Clip))
 </string>
           </argument>
         </arguments>

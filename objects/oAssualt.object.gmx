@@ -85,7 +85,7 @@ if (PickedUp) { ScShoot(); }
           <argument>
             <kind>1</kind>
             <string>draw_self()
-draw_text(x,y,string(Clip))
+//draw_text(x,y,string(Clip))
 </string>
           </argument>
         </arguments>

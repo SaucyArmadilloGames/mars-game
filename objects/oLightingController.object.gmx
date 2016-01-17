@@ -25,37 +25,6 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///old
-/*
-surf = surface_create(room_width, room_height);
-
-// Clear the surface
-
-surface_set_target(surf);
-draw_clear_alpha(c_black, 0);
-
-// Reset to application surface
-surface_reset_target();
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>instance_activate_region(view_xview[0],view_yview[0],view_wview[0],view_hview[0],true)
 global.light=surface_create(view_wview,view_hview)
 //instance_create(0,0,obj_cursor)
@@ -81,134 +50,23 @@ global.light=surface_create(view_wview,view_hview)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///old
-/*
-
-// Surfaces are volatile 
-// Always check that they haven't been destroyed 
-if (surface_exists(surf)) {
-    surface_set_target(surf);
-
-    // The following three lines set the 'dark' overlay
-    draw_set_color(c_black);
-    draw_set_alpha(0.7);
-    draw_rectangle(0, 0, room_width, room_height, 0);
-
-    // Setting the blend mode to 'subtract' is what allows us to "cut holes" out of the overlay
-    draw_set_blend_mode(bm_subtract);
-    draw_set_color(c_white);
-    
-    // Draw circles in the overlay with your different light sources
-    // Note that I add randomization to the position and radius to mimic a flicker effect
-    with (oLamp)
-        draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 96 + random_range(-1, 1), false);
-    with (oGlowFly)
-        draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 75 + random_range(-5, 5), false);
-    with (oPlayer)
-        draw_circle(x + random_range(-.5, .5), y + random_range(-.5, .5), 60 + random_range(-.5, .5), false);
-    with (pSwitch)
-        draw_rectangle(x + 12, y + 12, x - 12, y - 12, false);    
-            
-    //with (oParticleLantern)
-        //if (image_xscale &gt; 0.25)
-            //draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 2 + random_range(-1, 1), false);
-    
-    // Reset all of your draw stuff
-    draw_set_blend_mode(bm_normal);
-    draw_set_alpha(1);
-    surface_reset_target();
-} else {
-    // Again, surfaces can be a pain
-    // Create a new one if there were issues
-    surf = surface_create(room_width, room_height);
-    surface_set_target(surf);
-    draw_clear_alpha(c_black, 0);
-    surface_reset_target();
-}
-
-// Apparently I moved my fog layer with 'objDarkRoom', haha
-background_x[1] -= 0.5;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>surface_set_target(global.light)
 draw_set_color(c_ltgray)
 draw_rectangle(0,0,view_wview,view_hview,false)
 surface_reset_target()
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="73">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///old
-/*
 
-// Draw the surface or create a new one
-// Be sure to use views, even if it isn't necessary for your game
-// This trick bypasses an issue with resizing the game window
-// DX requires that surfaces be destroyed when resizing
-if (!surface_exists(surf)) {
-    surf = surface_create(room_width, room_height);
-} else {
-    if (view_current == 0) {
-        draw_surface(surf, 0, 0);
-    }
+/*
+if instance_exists(oLightingController) {
+size = 300
+draw_set_blend_mode(bm_subtract)
+surface_set_target(global.light)
+draw_ellipse_color(x-size/2-view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview,c_white,c_black,false)
+
+surface_reset_target()
+draw_set_blend_mode(bm_normal)
 }
+/*
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
