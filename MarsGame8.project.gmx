@@ -28,6 +28,11 @@
     <sound>sound\aSplat1</sound>
     <sound>sound\aSplat0</sound>
     <sound>sound\aPistolPickup</sound>
+    <sounds name="Terminal">
+      <sound>sound\aTerminalBlip0</sound>
+      <sound>sound\aTerminalBlip1</sound>
+      <sound>sound\aTerminalBlip2</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="DerpSprites">
@@ -148,6 +153,10 @@
       <sprite>sprites\sDoor</sprite>
       <sprite>sprites\sCrate3</sprite>
       <sprite>sprites\sFly</sprite>
+      <sprite>sprites\sTerminal</sprite>
+      <sprites name="UI">
+        <sprite>sprites\sTerminalBackdrop</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\sLightMask1</sprite>
     <sprite>sprites\sprite80</sprite>
@@ -422,12 +431,14 @@
     <object>objects\oGrapple</object>
     <object>objects\oStart</object>
     <object>objects\oDj</object>
+    <object>objects\oWriter</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
+    <room>rooms\rTEST</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
@@ -446,7 +457,6 @@
     <room>rooms\InfoDump2</room>
     <room>rooms\rTest2</room>
     <room>rooms\Slopemania</room>
-    <room>rooms\rTEST</room>
     <room>rooms\DemoRoom</room>
   </rooms>
   <help>
