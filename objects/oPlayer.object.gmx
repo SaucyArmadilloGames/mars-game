@@ -135,8 +135,7 @@ if vspeed &gt; -.01 {
 } else { 
 
 if place_meeting(x,y + vspeed,oPlatform1) { PlatSolid = true }
- 
-   }
+}
 </string>
           </argument>
         </arguments>

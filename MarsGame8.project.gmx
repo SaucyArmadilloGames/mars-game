@@ -32,6 +32,7 @@
       <sound>sound\aTerminalBlip0</sound>
       <sound>sound\aTerminalBlip1</sound>
       <sound>sound\aTerminalBlip2</sound>
+      <sound>sound\aTerminalStart</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
