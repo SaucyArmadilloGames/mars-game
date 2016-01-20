@@ -41,15 +41,51 @@ active = false;
 animatingText = true;
 finished = false;
 
+animatingLine = 1;
 currentPage = 1;
 currentCharacter = 1;
 
-fullText = "This is a test of the type writer system. Pretty neato.";
+//Eventually determined by room-specific strings
+fullText = "This is a test of the type writer system. Pretty neato. Here is some more text to test the multiline functionality. Text Text Text Text. Mars and text. It will be nice when we have actual story here. Too bad I'm too lazy to fabricate some for testing purposes.";
 fullTextLength = string_length(fullText);
 
 currentText = string_copy(fullText, 0, currentCharacter);
 
-
+//Multiline page variables
+lines[6] = "";
+currentLine = 0;
+lineIndex = 0;
+//Seperates string into multiple lines
+/*
+    Bug: Currently only works for the first line.
+    After 11 spaces are seen, the substring of lineIndex through i
+    should be added to the array based on the currentLine index.
+    Multiple lines are carrying duplicate string data and space count
+    is not representitive of what is added to the array for whatever reason.
+*/
+spaceCount = 0;
+var i;
+for(i = 0; i &lt; string_length(fullText); i++)
+{
+    if(string_char_at(fullText, i) == " ")
+    {
+        spaceCount++;
+    }
+    if(spaceCount == 11)
+    {
+        //Copying duplicate string stuff. Something about lineIndex?
+        lines[currentLine] = string_copy(fullText, lineIndex + 1, i);
+        //Supposed to reset for the next line
+        spaceCount = 0;
+        currentLine++;
+        lineIndex = i;
+    }
+}
+//Cleans up the rest of the string that didn't meet the
+//above conditional and puts it in the last array index
+//lineIndex = i;
+lines[currentLine] = string_copy(fullText, lineIndex + 1, string_length(fullText));
+//currentLine++;
 
 //Visual
 depth = 10;
@@ -98,7 +134,7 @@ if(active)
     if(animatingText &amp;&amp; backdropYPos &lt;= 5)
     {
         currentCharacter++;
-        currentText = string_copy(fullText, 0, currentCharacter);
+        currentText = string_copy(lines[0], 0, currentCharacter);
         if(string_length(currentText) % 5 == 0)
         {
             //Diversifies sound of terminal if need be.
@@ -234,7 +270,32 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
             <string>if(active)
 {
     draw_sprite_ext(sTerminalBackdrop, 1, 5, backdropYPos, 1, 1, 0, c_white, backdropOpacity);
-    draw_text(30, 40, currentText);
+    if(animatingText = true)
+    {
+        switch(animatingLine)
+        {
+            case 1:
+                draw_text(40, 40, currentText);
+            break;
+            
+            //For animating the current line
+            //Will also have to dispaly previous lines.
+            
+            default:
+            
+            break;
+        
+        }
+
+    }
+    if(finished == true)
+    {
+        draw_text(40, 40, lines[0]);
+        draw_text(40, 70, lines[1]);
+        draw_text(40, 100, lines[2]);
+        draw_text(40, 130, lines[3]);
+        draw_text(40, 160, lines[4]);
+    }
 }
 
 draw_self();
