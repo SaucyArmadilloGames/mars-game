@@ -60,7 +60,7 @@ global.BlueOpenC = false
 global.GreenOpenC = false
 global.OrangeOpenC = false
 global.PurpleOpenC = false
-audio_play_sound(aMusicAmbient1,1,true)
+audio_play_sound(aMusicMenu,1,true)
 global.Armed = false
         
         

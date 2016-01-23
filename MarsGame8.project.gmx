@@ -21,6 +21,7 @@
     <sound>sound\aSpiderSpawn</sound>
     <sound>sound\aChainsawPickup</sound>
     <sound>sound\aMusicAmbient1</sound>
+    <sound>sound\aMusicMenu</sound>
     <sound>sound\aSawPlaceholder</sound>
     <sound>sound\aExplosion24</sound>
     <sound>sound\aSplat3</sound>
@@ -33,6 +34,9 @@
       <sound>sound\aTerminalBlip1</sound>
       <sound>sound\aTerminalBlip2</sound>
       <sound>sound\aTerminalStart</sound>
+    </sounds>
+    <sounds name="Buttons">
+      <sound>sound\aButtonBeep_0</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

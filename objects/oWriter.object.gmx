@@ -46,7 +46,7 @@ currentPage = 1;
 currentCharacter = 1;
 
 //Eventually determined by room-specific strings
-fullText = "This is a test of the type writer system. Pretty neato. Here is some more text to test the multiline functionality. Text Text Text Text. Mars and text. It will be nice when we have actual story here. Too bad I'm too lazy to fabricate some for testing purposes.";
+fullText = "This is a test of the type writer system. Pretty neato. Here is some more text to test the multiline functionality. Mars and text. It will be nice when we have actual story here. Too bad I'm too lazy to fabricate some for testing purposes.";
 fullTextLength = string_length(fullText);
 
 currentText = string_copy(fullText, 0, currentCharacter);
@@ -63,7 +63,7 @@ lineIndex = 0;
     Multiple lines are carrying duplicate string data and space count
     is not representitive of what is added to the array for whatever reason.
 */
-spaceCount = 0;
+var spaceCount = 0;
 var i;
 for(i = 0; i &lt; string_length(fullText); i++)
 {
@@ -74,17 +74,24 @@ for(i = 0; i &lt; string_length(fullText); i++)
     if(spaceCount == 11)
     {
         //Copying duplicate string stuff. Something about lineIndex?
-        lines[currentLine] = string_copy(fullText, lineIndex + 1, i);
-        //Supposed to reset for the next line
+        lines[currentLine] = string_copy(fullText, lineIndex, i);
+        lineIndex = i + 1;
         spaceCount = 0;
         currentLine++;
-        lineIndex = i;
+        
+        
+        //lines[currentLine] = string_copy(fullText, lineIndex + 1, string_length(fullText));
+    
     }
 }
 //Cleans up the rest of the string that didn't meet the
 //above conditional and puts it in the last array index
 //lineIndex = i;
 lines[currentLine] = string_copy(fullText, lineIndex + 1, string_length(fullText));
+show_debug_message(lines[0]);
+show_debug_message(lines[1]);
+show_debug_message(lines[2]);
+show_debug_message(lines[3]);
 //currentLine++;
 
 //Visual
@@ -134,7 +141,7 @@ if(active)
     if(animatingText &amp;&amp; backdropYPos &lt;= 5)
     {
         currentCharacter++;
-        currentText = string_copy(lines[0], 0, currentCharacter);
+        currentText = string_copy(lines[animatingLine], 0, currentCharacter);
         if(string_length(currentText) % 5 == 0)
         {
             //Diversifies sound of terminal if need be.
@@ -157,23 +164,21 @@ if(active)
             */
             audio_play_sound(aTerminalBlip0,1,false)
         }
-        if(string_length(currentText) == string_length(fullText))
+        if(string_length(currentText) &gt;= string_length(lines[animatingLine]))
         {
+            animatingLine++;
+            currentCharacter = 1;
+            fullText = lines[animatingLine];
+            currentText = string_copy(lines[animatingLine], 0, 1);
+            
+        }
+        
+        if(string_length(lines[animatingLine]) == 0)
+        {
+            animatingLine++;
             animatingText = false;
             finished = true;
         }
-        
-    }
-    else
-    {
-        /*
-        if(keyboard_check_pressed(ord('E')) || keyboard_check_pressed(vk_enter) &amp;&amp; finished == true)
-        {
-            currentCharacter = 1;
-            currentText = "";
-            active = false;
-        }
-        */
         
     }
 }
@@ -216,6 +221,7 @@ else if(keyboard_check_pressed(ord('E')) &amp;&amp; finished == true)
     active = false;
     backdropYPos = 15;
     backdropOpacity = 0;
+    animatingLine = 1;
 }
 //When text is still animating and you want to reveal the whole page
 if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatingBackdrop == false)
@@ -231,26 +237,6 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
       </action>
     </event>
     <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>524</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_color</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>13</kind>
-            <string>16777215</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -278,6 +264,17 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
                 draw_text(40, 40, currentText);
             break;
             
+            case 2:
+                draw_text(40, 40, lines[0]);
+                draw_text(40, 70, currentText);
+            break;
+            
+            case 3:
+                draw_text(40, 40, lines[0]);
+                draw_text(40, 70, lines[1]);
+                draw_text(40, 100, currentText);
+            break;
+            
             //For animating the current line
             //Will also have to dispaly previous lines.
             
@@ -300,6 +297,26 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
 
 draw_self();
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>524</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_color</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>13</kind>
+            <string>16777215</string>
           </argument>
         </arguments>
       </action>
