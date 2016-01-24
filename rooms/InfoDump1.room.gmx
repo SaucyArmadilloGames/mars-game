@@ -27,7 +27,7 @@ audio_stop_sound(aCrashAlert);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>3</page>
+    <page>0</page>
     <xoffset>-1</xoffset>
     <yoffset>-48</yoffset>
   </makerSettings>

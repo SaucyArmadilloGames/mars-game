@@ -231,6 +231,8 @@
     <sprite>sprites\sBoss3</sprite>
     <sprite>sprites\sBloodSpore</sprite>
     <sprite>sprites\sprite152</sprite>
+    <sprite>sprites\sprite153_sGroundThing</sprite>
+    <sprite>sprites\sprite154_sDirtThing</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bFade</background>
@@ -381,6 +383,8 @@
       <object>objects\oSolid</object>
       <object>objects\oCrate2</object>
       <object>objects\oWall1</object>
+      <object>objects\object108</object>
+      <object>objects\object109</object>
       <object>objects\oWall2_Long</object>
       <object>objects\oWallBlood1</object>
       <object>objects\oWall2Blood_long</object>
@@ -464,7 +468,7 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
-    <room>rooms\room23</room>
+    <room>rooms\room22</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
     <room>rooms\rLevel3</room>
@@ -485,6 +489,7 @@
     <room>rooms\rTest2</room>
     <room>rooms\Slopemania</room>
     <room>rooms\DemoRoom</room>
+    <room>rooms\room23</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
