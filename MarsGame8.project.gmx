@@ -6,37 +6,53 @@
   <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\aPIll</sound>
-    <sound>sound\aKnife</sound>
-    <sound>sound\ZombifySound</sound>
-    <sound>sound\CureSound</sound>
-    <sound>sound\DeathSound</sound>
-    <sound>sound\aExplode</sound>
-    <sound>sound\aThud</sound>
-    <sound>sound\aDeathSound</sound>
-    <sound>sound\aPew2</sound>
-    <sound>sound\aPew1</sound>
-    <sound>sound\aBugDeath</sound>
-    <sound>sound\aFire</sound>
-    <sound>sound\aSpiderSpawn</sound>
-    <sound>sound\aChainsawPickup</sound>
-    <sound>sound\aMusicAmbient1</sound>
-    <sound>sound\aMusicMenu</sound>
-    <sound>sound\aSawPlaceholder</sound>
-    <sound>sound\aExplosion24</sound>
-    <sound>sound\aSplat3</sound>
-    <sound>sound\aSplat2</sound>
-    <sound>sound\aSplat1</sound>
-    <sound>sound\aSplat0</sound>
-    <sound>sound\aPistolPickup</sound>
-    <sounds name="Terminal">
-      <sound>sound\aTerminalBlip0</sound>
-      <sound>sound\aTerminalBlip1</sound>
-      <sound>sound\aTerminalBlip2</sound>
-      <sound>sound\aTerminalStart</sound>
-    </sounds>
     <sounds name="Buttons">
       <sound>sound\aButtonBeep_0</sound>
+    </sounds>
+    <sounds name="Enemy">
+      <sound>sound\aSpiderSpawn</sound>
+      <sound>sound\ZombifySound</sound>
+      <sound>sound\aBugDeath</sound>
+    </sounds>
+    <sounds name="Weapons">
+      <sound>sound\aChainsawPickup</sound>
+      <sound>sound\aSawPlaceholder</sound>
+      <sound>sound\aPistolPickup</sound>
+      <sound>sound\aPew1</sound>
+      <sound>sound\aPew2</sound>
+      <sound>sound\aKnife</sound>
+    </sounds>
+    <sounds name="Impacts">
+      <sound>sound\aSplat0</sound>
+      <sound>sound\aSplat1</sound>
+      <sound>sound\aSplat2</sound>
+      <sound>sound\aSplat3</sound>
+      <sound>sound\aRicochet_0</sound>
+      <sound>sound\aThud</sound>
+    </sounds>
+    <sounds name="Explosions">
+      <sound>sound\aExplode</sound>
+      <sound>sound\aFire</sound>
+      <sound>sound\aExplosion24</sound>
+    </sounds>
+    <sounds name="Music">
+      <sound>sound\aMusicAmbient1</sound>
+      <sound>sound\aMusicMenu</sound>
+    </sounds>
+    <sounds name="Technology">
+      <sound>sound\aCrashAlert</sound>
+      <sounds name="Terminal">
+        <sound>sound\aTerminalBlip0</sound>
+        <sound>sound\aTerminalBlip1</sound>
+        <sound>sound\aTerminalBlip2</sound>
+        <sound>sound\aTerminalStart</sound>
+      </sounds>
+    </sounds>
+    <sounds name="Other">
+      <sound>sound\aDeathSound</sound>
+      <sound>sound\CureSound</sound>
+      <sound>sound\DeathSound</sound>
+      <sound>sound\aPIll</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -245,13 +261,14 @@
     <background>background\background17</background>
     <background>background\background18</background>
     <background>background\br_black</background>
-    <background>background\br_BackroundxD</background>
-    <background>background\BackgoundMenu1</background>
-    <background>background\BackgroundMenu2</background>
-    <background>background\BrDust</background>
-    <background>background\BrDust2</background>
     <background>background\background33</background>
     <background>background\Backround_meh</background>
+    <backgrounds name="Menu">
+      <background>background\BackgoundMenu1</background>
+      <background>background\BackgroundMenu2</background>
+      <background>background\BrDust</background>
+      <background>background\BrDust2</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -286,7 +303,6 @@
     <script>scripts\ScOpen2.gml</script>
     <script>scripts\arc_of_sight.gml</script>
     <script>scripts\angle_approach.gml</script>
-    <script>scripts\script27.gml</script>
     <script>scripts\ScGrind.gml</script>
     <script>scripts\ScPushOut.gml</script>
     <scripts name="Guns!">

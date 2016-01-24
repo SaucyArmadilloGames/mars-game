@@ -46,7 +46,7 @@ currentPage = 1;
 currentCharacter = 1;
 
 //Eventually determined by room-specific strings
-fullText = "This is a test of the type writer system. Pretty neato. Here is some more text to test the multiline functionality. Mars and text. It will be nice when we have actual story here. Too bad I'm too lazy to fabricate some for testing purposes.";
+fullText = "This is a test of the type writer system. Pretty neato.\Here is some more text to test the multiline functionality.\Mars and text. It will be nice when we have actual story here.\Too bad I'm too lazy to fabricate some for testing purposes.";
 fullTextLength = string_length(fullText);
 
 currentText = string_copy(fullText, 0, currentCharacter);
@@ -55,44 +55,29 @@ currentText = string_copy(fullText, 0, currentCharacter);
 lines[6] = "";
 currentLine = 0;
 lineIndex = 0;
-//Seperates string into multiple lines
-/*
-    Bug: Currently only works for the first line.
-    After 11 spaces are seen, the substring of lineIndex through i
-    should be added to the array based on the currentLine index.
-    Multiple lines are carrying duplicate string data and space count
-    is not representitive of what is added to the array for whatever reason.
-*/
+
+//Seperates string into multiple lines with \
 var spaceCount = 0;
-var i;
 for(i = 0; i &lt; string_length(fullText); i++)
 {
-    if(string_char_at(fullText, i) == " ")
-    {
-        spaceCount++;
-    }
-    if(spaceCount == 11)
+    if(string_char_at(fullText, i) == "\")
     {
         //Copying duplicate string stuff. Something about lineIndex?
-        lines[currentLine] = string_copy(fullText, lineIndex, i);
-        lineIndex = i + 1;
-        spaceCount = 0;
+        lines[currentLine] = string_copy(fullText, lineIndex, i - 1);
+        lineIndex = i;
         currentLine++;
-        
-        
-        //lines[currentLine] = string_copy(fullText, lineIndex + 1, string_length(fullText));
-    
+                
+        //lines[currentLine] = string_copy(fullText, lineIndex + 1, string_length(fullText)); 
     }
+    
 }
 //Cleans up the rest of the string that didn't meet the
 //above conditional and puts it in the last array index
-//lineIndex = i;
 lines[currentLine] = string_copy(fullText, lineIndex + 1, string_length(fullText));
 show_debug_message(lines[0]);
 show_debug_message(lines[1]);
 show_debug_message(lines[2]);
 show_debug_message(lines[3]);
-//currentLine++;
 
 //Visual
 depth = 10;
@@ -141,7 +126,7 @@ if(active)
     if(animatingText &amp;&amp; backdropYPos &lt;= 5)
     {
         currentCharacter++;
-        currentText = string_copy(lines[animatingLine], 0, currentCharacter);
+        currentText = string_copy(lines[animatingLine - 1], 0, currentCharacter);
         if(string_length(currentText) % 5 == 0)
         {
             //Diversifies sound of terminal if need be.
@@ -276,7 +261,7 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
             break;
             
             //For animating the current line
-            //Will also have to dispaly previous lines.
+            //Will also have to display previous lines.
             
             default:
             
@@ -285,7 +270,7 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
         }
 
     }
-    if(finished == true)
+    else if(finished == true)
     {
         draw_text(40, 40, lines[0]);
         draw_text(40, 70, lines[1]);
