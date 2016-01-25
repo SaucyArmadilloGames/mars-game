@@ -323,6 +323,7 @@
     </scripts>
     <script>scripts\ScPlaySplat.gml</script>
     <script>scripts\ScCanSee.gml</script>
+    <script>scripts\ScString_Split.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_multiply.shader</shader>
@@ -468,6 +469,7 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
+    <room>rooms\rTEST</room>
     <room>rooms\room22</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
@@ -482,14 +484,13 @@
     <room>rooms\room21</room>
     <room>rooms\LooseScreen</room>
     <room>rooms\TEST</room>
-    <room>rooms\rTEST</room>
     <room>rooms\rTemplate</room>
     <room>rooms\rTemplate2</room>
     <room>rooms\InfoDump2</room>
     <room>rooms\rTest2</room>
     <room>rooms\Slopemania</room>
-    <room>rooms\DemoRoom</room>
     <room>rooms\room23</room>
+    <room>rooms\DemoRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
