@@ -48,6 +48,8 @@ else
     writerExists = false;
 }
 
+pausePlayer = false;
+
 </string>
           </argument>
         </arguments>
@@ -104,7 +106,7 @@ draw_set_blend_mode(bm_normal)
             <string>ScForceStayInGame();
 ScAllDudes();
 ScPushOut();
-if(writerExists) 
+if(!pausePlayer)
 {
 // Player Sprite Facing
 pointerDir = point_direction(x,y,mouse_x, mouse_y);

@@ -39,7 +39,7 @@
 
 active = false;
 animatingText = false;
-finished = false;
+finishedPage = false;
 
 animatingLine = 0;
 currentPage = 1;
@@ -66,6 +66,8 @@ depth = 10;
 backdropYPos = 15;
 animatingBackdrop = false;
 backdropOpacity = 0;
+
+textOpacity = 0.8;
 </string>
           </argument>
         </arguments>
@@ -105,6 +107,7 @@ if(active)
     //Animates the string
     if(animatingText &amp;&amp; backdropYPos &lt;= 5)
     {
+        textOpacity = 0.8;
         //Character assessment
         if(string_length(currentText) &gt;= string_length(ds_list_find_value(linesList, animatingLine)))
         {
@@ -124,6 +127,7 @@ if(active)
                 if(string_length(currentText) % 3 == 0)
                 {
                     audio_play_sound(aTerminalBlip0, 1, false)
+                    textOpacity = 0.7;
                 }
             }
             else
@@ -135,12 +139,10 @@ if(active)
         }
         if(animatingLine == 6)
         {
-            finished = true;
+            finishedPage = true;
             animatingText = false;
+            textOpacity = 0.8;
         }
-        
-        
-        
     }
 }
 
@@ -172,11 +174,12 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; active == false)
 {
     active = true;
     animatingBackdrop = true;
-    finished = false;
+    finishedPage = false;
     audio_play_sound(aTerminalStart,1,false)
+    oPlayer.pausePlayer = true;
 }
 //When all text has been presented, variable reset
-else if(keyboard_check_pressed(ord('E')) &amp;&amp; finished == true)
+else if(keyboard_check_pressed(ord('E')) &amp;&amp; finishedPage == true)
 {
     currentCharacter = 1;
     currentText = "";
@@ -184,13 +187,14 @@ else if(keyboard_check_pressed(ord('E')) &amp;&amp; finished == true)
     backdropYPos = 15;
     backdropOpacity = 0;
     animatingLine = 0;
+    oPlayer.pausePlayer = false;
 }
 //When text is still animating and you want to reveal the whole page
 if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatingBackdrop == false)
 {
     currentText = fullText;
     animatingText = false;
-    finished = true;
+    finishedPage = true;
     animatingLine = 0;
     currentCharacter = 1;
 }
@@ -245,77 +249,77 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
         switch(animatingLine)
         {
             case 0:
-                draw_text(40, 40, currentText);
+                draw_text_colour(40, 40, currentText, c_white, c_white, c_white, c_white, textOpacity);
             break;
             
             case 1:
-                draw_text(40, 40, ds_list_find_value(linesList, 0));
-                draw_text(40, 70, currentText);
+                draw_text_colour(40, 40, ds_list_find_value(linesList, 0), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 70, currentText, c_white, c_white, c_white, c_white, textOpacity);
             break;
             
             case 2:
-                draw_text(40, 40, ds_list_find_value(linesList, 0));
-                draw_text(40, 70, ds_list_find_value(linesList, 1));
-                draw_text(40, 100, currentText);
+                draw_text_colour(40, 40, ds_list_find_value(linesList, 0), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 70, ds_list_find_value(linesList, 1), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 100, currentText, c_white, c_white, c_white, c_white, textOpacity);
             break;
             
             case 3:
-                draw_text(40, 40, ds_list_find_value(linesList, 0));
-                draw_text(40, 70, ds_list_find_value(linesList, 1));
-                draw_text(40, 100, ds_list_find_value(linesList, 2));
-                draw_text(40, 130, currentText);
+                draw_text_colour(40, 40, ds_list_find_value(linesList, 0), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 70, ds_list_find_value(linesList, 1), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 100, ds_list_find_value(linesList, 2), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 130, currentText, c_white, c_white, c_white, c_white, textOpacity);
+           
             break;
             
             case 4:
-                draw_text(40, 40, ds_list_find_value(linesList, 0));
-                draw_text(40, 70, ds_list_find_value(linesList, 1));
-                draw_text(40, 100, ds_list_find_value(linesList, 2));
-                draw_text(40, 130, ds_list_find_value(linesList, 3));
-                draw_text(40, 160, currentText);
+                draw_text_colour(40, 40, ds_list_find_value(linesList, 0), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 70, ds_list_find_value(linesList, 1), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 100, ds_list_find_value(linesList, 2), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 130, ds_list_find_value(linesList, 3), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 160, currentText, c_white, c_white, c_white, c_white, textOpacity);
             break;
             
             case 5:
-                draw_text(40, 40, ds_list_find_value(linesList, 0));
-                draw_text(40, 70, ds_list_find_value(linesList, 1));
-                draw_text(40, 100, ds_list_find_value(linesList, 2));
-                draw_text(40, 130, ds_list_find_value(linesList, 3));
-                draw_text(40, 160, ds_list_find_value(linesList, 4));
-                draw_text(40, 190, currentText);
+                draw_text_colour(40, 40, ds_list_find_value(linesList, 0), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 70, ds_list_find_value(linesList, 1), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 100, ds_list_find_value(linesList, 2), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 130, ds_list_find_value(linesList, 3), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 160, ds_list_find_value(linesList, 4), c_white, c_white, c_white, c_white, textOpacity);       
+                draw_text_colour(40, 190, currentText, c_white, c_white, c_white, c_white, textOpacity);
             break;
             
             case 6:
-                draw_text(40, 40, ds_list_find_value(linesList, 0));
-                draw_text(40, 70, ds_list_find_value(linesList, 1));
-                draw_text(40, 100, ds_list_find_value(linesList, 2));
-                draw_text(40, 130, ds_list_find_value(linesList, 3));
-                draw_text(40, 160, ds_list_find_value(linesList, 4));
-                draw_text(40, 160, ds_list_find_value(linesList, 5));
-                draw_text(40, 190, currentText);
+                draw_text_colour(40, 40, ds_list_find_value(linesList, 0), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 70, ds_list_find_value(linesList, 1), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 100, ds_list_find_value(linesList, 2), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 130, ds_list_find_value(linesList, 3), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 160, ds_list_find_value(linesList, 4), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 190, ds_list_find_value(linesList, 5), c_white, c_white, c_white, c_white, textOpacity);           
+                draw_text_colour(40, 220, currentText, c_white, c_white, c_white, c_white, textOpacity);
             break;
             
             default:
-                draw_text(40, 40, ds_list_find_value(linesList, 0));
-                draw_text(40, 70, ds_list_find_value(linesList, 1));
-                draw_text(40, 100, ds_list_find_value(linesList, 2));
-                draw_text(40, 130, ds_list_find_value(linesList, 3));
-                draw_text(40, 160, ds_list_find_value(linesList, 4));
-                draw_text(40, 190, ds_list_find_value(linesList, 5));
-                draw_text(40, 220, ds_list_find_value(linesList, 6));
-                draw_text(40, 250, ds_list_find_value(linesList, 7));
+                draw_text_colour(40, 40, ds_list_find_value(linesList, 0), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 70, ds_list_find_value(linesList, 1), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 100, ds_list_find_value(linesList, 2), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 130, ds_list_find_value(linesList, 3), c_white, c_white, c_white, c_white, textOpacity);      
+                draw_text_colour(40, 160, ds_list_find_value(linesList, 4), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 190, ds_list_find_value(linesList, 5), c_white, c_white, c_white, c_white, textOpacity);
+                draw_text_colour(40, 220, ds_list_find_value(linesList, 6), c_white, c_white, c_white, c_white, textOpacity);
             break;
         
         }
 
     }
-    else if(finished == true)
+    else if(finishedPage == true)
     {
-        draw_text(40, 40, ds_list_find_value(linesList, 0));
-        draw_text(40, 70, ds_list_find_value(linesList, 1));
-        draw_text(40, 100, ds_list_find_value(linesList, 2));
-        draw_text(40, 130, ds_list_find_value(linesList, 3));
-        draw_text(40, 160, ds_list_find_value(linesList, 4));
-        draw_text(40, 190, ds_list_find_value(linesList, 5));
-        draw_text(40, 220, ds_list_find_value(linesList, 6));
+        draw_text_colour(40, 40, ds_list_find_value(linesList, 0), c_white, c_white, c_white, c_white, textOpacity);
+        draw_text_colour(40, 70, ds_list_find_value(linesList, 1), c_white, c_white, c_white, c_white, textOpacity);
+        draw_text_colour(40, 100, ds_list_find_value(linesList, 2), c_white, c_white, c_white, c_white, textOpacity);      
+        draw_text_colour(40, 130, ds_list_find_value(linesList, 3), c_white, c_white, c_white, c_white, textOpacity);      
+        draw_text_colour(40, 160, ds_list_find_value(linesList, 4), c_white, c_white, c_white, c_white, textOpacity);
+        draw_text_colour(40, 190, ds_list_find_value(linesList, 5), c_white, c_white, c_white, c_white, textOpacity);
+        draw_text_colour(40, 220, ds_list_find_value(linesList, 6), c_white, c_white, c_white, c_white, textOpacity);
     }
 }
 
