@@ -59,6 +59,7 @@ fadeOut = false
 image_index = 1
 Counting = true
 room_goto_next()
+audio_stop_sound(aMusicMenu);
 
 }
 

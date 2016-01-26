@@ -44,9 +44,10 @@ finished = false;
 animatingLine = 0;
 currentPage = 1;
 currentCharacter = 0;
+characterDelay = 1; //Delays for one step
 
 //Eventually determined by room-specific strings
-fullText = "Holy God Damn this is actually working now. This took way too long.|Right now, it's fixated to 5 lines and you have to manually indent|with a special character.|There isn't any page or text speed management either.|But at least the hard part is over with.";
+fullText = "This is default text for the current fullText to be displayed.|In the future, if this displays in a game room, something either went|wrong, or a custom room string hasn't been implemented yet.";
 
 //Seperates string into multiple values with |
 linesList = ds_list_create();
@@ -56,6 +57,7 @@ ds_list_add(linesList, ScString_Split(fullText, 2, "|"));
 ds_list_add(linesList, ScString_Split(fullText, 3, "|"));
 ds_list_add(linesList, ScString_Split(fullText, 4, "|"));
 ds_list_add(linesList, ScString_Split(fullText, 5, "|"));
+ds_list_add(linesList, ScString_Split(fullText, 6, "|"));
 
 currentText = string_copy(ds_list_find_value(linesList, animatingLine), 0, 1);
 
@@ -114,14 +116,24 @@ if(active)
         else
         {
             currentText = string_copy(ds_list_find_value(linesList, animatingLine), 0, currentCharacter);
-            currentCharacter++;
-            //Audio
-            if(string_length(currentText) % 5 == 0)
+            if(characterDelay == 0)
             {
-                audio_play_sound(aTerminalBlip0, 1, false)
+                currentCharacter++;
+                characterDelay = 1;
+                //Audio
+                if(string_length(currentText) % 3 == 0)
+                {
+                    audio_play_sound(aTerminalBlip0, 1, false)
+                }
             }
+            else
+            {
+                characterDelay--;
+            }
+            
+            
         }
-        if(animatingLine == 5)
+        if(animatingLine == 6)
         {
             finished = true;
             animatingText = false;
@@ -271,8 +283,15 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
                 draw_text(40, 190, currentText);
             break;
             
-            //For animating the current line
-            //Will also have to display previous lines.
+            case 6:
+                draw_text(40, 40, ds_list_find_value(linesList, 0));
+                draw_text(40, 70, ds_list_find_value(linesList, 1));
+                draw_text(40, 100, ds_list_find_value(linesList, 2));
+                draw_text(40, 130, ds_list_find_value(linesList, 3));
+                draw_text(40, 160, ds_list_find_value(linesList, 4));
+                draw_text(40, 160, ds_list_find_value(linesList, 5));
+                draw_text(40, 190, currentText);
+            break;
             
             default:
                 draw_text(40, 40, ds_list_find_value(linesList, 0));
@@ -281,6 +300,8 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
                 draw_text(40, 130, ds_list_find_value(linesList, 3));
                 draw_text(40, 160, ds_list_find_value(linesList, 4));
                 draw_text(40, 190, ds_list_find_value(linesList, 5));
+                draw_text(40, 220, ds_list_find_value(linesList, 6));
+                draw_text(40, 250, ds_list_find_value(linesList, 7));
             break;
         
         }
@@ -294,6 +315,7 @@ if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatin
         draw_text(40, 130, ds_list_find_value(linesList, 3));
         draw_text(40, 160, ds_list_find_value(linesList, 4));
         draw_text(40, 190, ds_list_find_value(linesList, 5));
+        draw_text(40, 220, ds_list_find_value(linesList, 6));
     }
 }
 

@@ -37,6 +37,17 @@ key_down = 0;
 
 // Create player's hand
 instance_create(x,y,oHand);
+
+//Writer
+if(object_exists(oWriter))
+{
+    writerExists = true;
+}
+else
+{
+    writerExists = false;
+}
+
 </string>
           </argument>
         </arguments>
@@ -93,7 +104,8 @@ draw_set_blend_mode(bm_normal)
             <string>ScForceStayInGame();
 ScAllDudes();
 ScPushOut();
-
+if(writerExists) 
+{
 // Player Sprite Facing
 pointerDir = point_direction(x,y,mouse_x, mouse_y);
 walking = keyboard_check(ord('D')) || keyboard_check(ord('A'));
@@ -135,6 +147,7 @@ if vspeed &gt; -.01 {
 } else { 
 
 if place_meeting(x,y + vspeed,oPlatform1) { PlatSolid = true }
+}
 }
 </string>
           </argument>
