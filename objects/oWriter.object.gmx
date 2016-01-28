@@ -37,9 +37,18 @@
     for writing all of the text can be skipped with E or Enter.
 */
 
+
 active = false;
 animatingText = false;
 finishedPage = false;
+
+globalvar pageList;
+pageList = ds_list_create();
+
+
+ScCheckRoomPages();
+
+currentPage = 0;
 
 animatingLine = 0;
 currentPage = 1;
@@ -47,7 +56,8 @@ currentCharacter = 0;
 characterDelay = 1; //Delays for one step
 
 //Eventually determined by room-specific strings
-fullText = "This is default text for the current fullText to be displayed.|In the future, if this displays in a game room, something either went|wrong, or a custom room string hasn't been implemented yet.";
+fullText = ds_list_find_value(global.pageList, 0);
+
 
 //Seperates string into multiple values with |
 linesList = ds_list_create();
