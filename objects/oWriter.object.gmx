@@ -41,22 +41,20 @@
 active = false;
 animatingText = false;
 finishedPage = false;
+finishedAll = false;
 
 globalvar pageList;
 pageList = ds_list_create();
-
+currentPage = 0;
 
 ScCheckRoomPages();
 
-currentPage = 0;
-
 animatingLine = 0;
-currentPage = 1;
 currentCharacter = 0;
 characterDelay = 1; //Delays for one step
 
 //Eventually determined by room-specific strings
-fullText = ds_list_find_value(global.pageList, 0);
+fullText = ds_list_find_value(global.pageList, currentPage);
 
 
 //Seperates string into multiple values with |
@@ -121,7 +119,6 @@ if(active)
         //Character assessment
         if(string_length(currentText) &gt;= string_length(ds_list_find_value(linesList, animatingLine)))
         {
-            
             animatingLine++;
             currentCharacter = 1;
             currentText = string_copy(ds_list_find_value(linesList, animatingLine), 0, currentCharacter);
@@ -144,11 +141,9 @@ if(active)
             {
                 characterDelay--;
             }
-            
-            
         }
         if(animatingLine == 6)
-        {
+        {            
             finishedPage = true;
             animatingText = false;
             textOpacity = 0.8;
@@ -182,15 +177,18 @@ if(active)
 //When you first activate a terminal
 if(keyboard_check_pressed(ord('E')) &amp;&amp; active == false)
 {
+    currentPage = 0;
     active = true;
     animatingBackdrop = true;
     finishedPage = false;
+    finishedAll = false;
     audio_play_sound(aTerminalStart,1,false)
     oPlayer.pausePlayer = true;
 }
 //When all text has been presented, variable reset
-else if(keyboard_check_pressed(ord('E')) &amp;&amp; finishedPage == true)
+else if(keyboard_check_pressed(ord('E')) &amp;&amp; finishedAll == true)
 {
+    currentPage = 0;
     currentCharacter = 1;
     currentText = "";
     active = false;
@@ -199,14 +197,42 @@ else if(keyboard_check_pressed(ord('E')) &amp;&amp; finishedPage == true)
     animatingLine = 0;
     oPlayer.pausePlayer = false;
 }
+else if(keyboard_check_pressed(ord('E')) &amp;&amp; finishedPage == true &amp;&amp; finishedAll = false)
+{
+    currentPage++;
+    fullText = ds_list_find_value(global.pageList, 1);
+    linesList = ds_list_create();
+    ds_list_add(linesList, ScString_Split(fullText, 0, "|"));
+    ds_list_add(linesList, ScString_Split(fullText, 1, "|"));
+    ds_list_add(linesList, ScString_Split(fullText, 2, "|"));
+    ds_list_add(linesList, ScString_Split(fullText, 3, "|"));
+    ds_list_add(linesList, ScString_Split(fullText, 4, "|"));
+    ds_list_add(linesList, ScString_Split(fullText, 5, "|"));
+    ds_list_add(linesList, ScString_Split(fullText, 6, "|"));
+
+    animatingLine = 0;
+    currentText = string_copy(ds_list_find_value(linesList, animatingLine), 0, 1);
+    finishedPage = false;
+    animatingText = true;
+    currentCharacter = 1;
+    finishedText = false;
+}
 //When text is still animating and you want to reveal the whole page
-if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatingBackdrop == false)
+else if(keyboard_check_pressed(ord('E')) &amp;&amp; animatingText &amp;&amp; animatingBackdrop == false)
 {
     currentText = fullText;
     animatingText = false;
     finishedPage = true;
     animatingLine = 0;
     currentCharacter = 1;
+    if(currentPage == ds_list_size(global.pageList))
+    {
+        finishedAll = true;
+    }
+    else
+    {
+        currentPage++;
+    }
 }
 
 </string>
