@@ -271,6 +271,11 @@
       <background>background\BrDust</background>
       <background>background\BrDust2</background>
     </backgrounds>
+    <backgrounds name="Rooms">
+      <backgrounds name="SectionA">
+        <background>background\bSectionA_0</background>
+      </backgrounds>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -470,7 +475,6 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\InfoDump1</room>
-    <room>rooms\rTEST</room>
     <room>rooms\room22</room>
     <room>rooms\rLevel1</room>
     <room>rooms\rLevel2</room>
@@ -492,6 +496,8 @@
     <room>rooms\Slopemania</room>
     <room>rooms\room23</room>
     <room>rooms\DemoRoom</room>
+    <room>rooms\rTEST</room>
+    <room>rooms\rSecton_A0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
